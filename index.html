@@ -1,0 +1,385 @@
+<title>Fabrizio — Junior Full-Stack Developer</title>
+
+<style>
+:root{
+  --paper:#F4F5F2;
+  --ink:#16191A;
+  --muted:#6B7370;
+  --rule:#DDE0DA;
+  --accent:#8C2F39;
+  --accent-soft:#EFE3E4;
+  --lift:#FFFFFF;
+
+  --mono: ui-monospace, "Cascadia Mono", "SF Mono", Menlo, Consolas, monospace;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --paper:#121513; --ink:#E9EBE5; --muted:#8E968F; --rule:#2A2F2B;
+    --accent:#E1727C; --accent-soft:#2A1D1F; --lift:#191D1A;
+  }
+}
+:root[data-theme="light"]{
+  --paper:#F4F5F2; --ink:#16191A; --muted:#6B7370; --rule:#DDE0DA;
+  --accent:#8C2F39; --accent-soft:#EFE3E4; --lift:#FFFFFF;
+}
+:root[data-theme="dark"]{
+  --paper:#121513; --ink:#E9EBE5; --muted:#8E968F; --rule:#2A2F2B;
+  --accent:#E1727C; --accent-soft:#2A1D1F; --lift:#191D1A;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+
+.page{
+  max-width:44rem;
+  margin:0 auto;
+  padding:clamp(2.5rem,7vw,5rem) clamp(1.25rem,5vw,2rem) 5rem;
+  display:flex;
+  flex-direction:column;
+  gap:3.25rem;
+}
+
+/* ── shared label ─────────────────────────────── */
+.label{
+  font-family:var(--mono);
+  font-size:.6875rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+
+/* ── masthead ─────────────────────────────────── */
+.masthead{display:flex;flex-direction:column;gap:1.25rem}
+
+.name{
+  margin:0;
+  font-size:clamp(2.75rem,10vw,4.25rem);
+  font-weight:800;
+  letter-spacing:-.045em;
+  line-height:.95;
+  text-wrap:balance;
+}
+.name::after{
+  content:".";
+  color:var(--accent);
+}
+
+.role{
+  font-family:var(--mono);
+  font-size:.875rem;
+  letter-spacing:.02em;
+  color:var(--accent);
+  margin:0;
+}
+
+.intro{
+  margin:0;
+  max-width:34rem;
+  color:var(--muted);
+  font-size:1.0625rem;
+}
+.intro strong{color:var(--ink);font-weight:600}
+
+/* ── fact table ───────────────────────────────── */
+.facts{
+  display:grid;
+  grid-template-columns:7.5rem 1fr;
+  gap:.55rem 1.5rem;
+  border-top:1px solid var(--rule);
+  padding-top:1.25rem;
+}
+.facts dt{margin:0}
+.facts dd{margin:0;font-size:.9375rem}
+
+/* ── sections ─────────────────────────────────── */
+section{display:flex;flex-direction:column;gap:1rem}
+
+.head{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:1rem;
+  border-bottom:1px solid var(--rule);
+  padding-bottom:.6rem;
+}
+.head h2{
+  margin:0;
+  font-size:1.0625rem;
+  font-weight:650;
+  letter-spacing:-.015em;
+}
+
+/* ── link rows ────────────────────────────────── */
+.rows{display:flex;flex-direction:column}
+
+.row{
+  display:grid;
+  grid-template-columns:1fr auto;
+  align-items:start;
+  gap:.35rem 1rem;
+  padding:1.0625rem .25rem 1.0625rem 0;
+  border-bottom:1px solid var(--rule);
+  text-decoration:none;
+  color:inherit;
+  transition:padding-left .18s ease, background-color .18s ease;
+}
+a.row:hover,
+a.row:focus-visible{
+  background:var(--lift);
+  padding-left:.85rem;
+  outline:none;
+}
+a.row:focus-visible{box-shadow:inset 3px 0 0 var(--accent)}
+a.row:hover .rtitle,
+a.row:focus-visible .rtitle{color:var(--accent)}
+
+.rtitle{
+  font-weight:650;
+  font-size:1.0625rem;
+  letter-spacing:-.01em;
+  transition:color .18s ease;
+}
+.rdesc{
+  grid-column:1;
+  margin:0;
+  color:var(--muted);
+  font-size:.9375rem;
+  max-width:32rem;
+}
+.rmeta{
+  grid-column:2;
+  grid-row:1;
+  font-family:var(--mono);
+  font-size:.6875rem;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--muted);
+  white-space:nowrap;
+  padding-top:.3rem;
+}
+a.row .rmeta::after{
+  content:" →";
+  color:var(--accent);
+}
+
+/* rows that are not live yet */
+.row.pending{opacity:.62}
+.row.pending .rmeta{color:var(--accent)}
+
+/* ── stack ────────────────────────────────────── */
+.stack{
+  display:flex;
+  flex-direction:column;
+  gap:.85rem;
+}
+.strand{
+  display:grid;
+  grid-template-columns:7.5rem 1fr;
+  gap:.35rem 1.5rem;
+}
+.strand p{margin:0;font-size:.9375rem}
+.strand b{font-weight:600}
+
+/* ── prose block ──────────────────────────────── */
+.prose{display:flex;flex-direction:column;gap:.85rem;max-width:34rem}
+.prose p{margin:0;font-size:.9375rem;color:var(--muted)}
+.prose b{color:var(--ink);font-weight:600}
+
+/* ── footer ───────────────────────────────────── */
+footer{
+  border-top:1px solid var(--rule);
+  padding-top:1.25rem;
+  display:flex;
+  flex-wrap:wrap;
+  gap:.5rem 1.25rem;
+  justify-content:space-between;
+}
+
+@media (max-width:34rem){
+  .facts,.strand{grid-template-columns:1fr;gap:.15rem}
+  .facts dd,.strand p{margin-bottom:.55rem}
+  .row{grid-template-columns:1fr}
+  .rmeta{grid-column:1;grid-row:auto;padding-top:.15rem}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none !important}
+}
+</style>
+
+<div class="page">
+
+  <!-- ═══════════ MASTHEAD ═══════════ -->
+  <header class="masthead">
+    <h1 class="name">Fabrizio</h1>
+    <p class="role">Junior full-stack developer / Naples, Italy</p>
+
+    <p class="intro">Game-design graduate who moved into software. I build
+    <strong>complete applications on my own</strong> — React front-end, Python
+    back-end, database, authentication — and I write automation tools I actually
+    run every day.</p>
+
+    <dl class="facts">
+      <dt class="label">Based in</dt>
+      <dd>Naples, Italy — EU</dd>
+
+      <dt class="label">Working</dt>
+      <dd>Remote</dd>
+
+      <dt class="label">Languages</dt>
+      <dd>Italian (native) · English (written)</dd>
+
+      <dt class="label">Status</dt>
+      <dd>Open to junior roles</dd>
+    </dl>
+  </header>
+
+  <!-- ═══════════ CONTACT ═══════════ -->
+  <section>
+    <div class="head">
+      <h2>Get in touch</h2>
+      <span class="label">Contact</span>
+    </div>
+
+    <div class="rows">
+      <a class="row" href="mailto:fabwork987@gmail.com">
+        <span class="rtitle">Email</span>
+        <span class="rmeta">Write</span>
+        <p class="rdesc">fabwork987@gmail.com</p>
+      </a>
+
+      <!-- TODO — swap for the real GitHub profile URL, then remove class "pending" -->
+      <div class="row pending">
+        <span class="rtitle">GitHub</span>
+        <span class="rmeta">Link missing</span>
+        <p class="rdesc">Source code for everything below.</p>
+      </div>
+
+      <!-- TODO — swap for the real LinkedIn profile URL, then remove class "pending" -->
+      <div class="row pending">
+        <span class="rtitle">LinkedIn</span>
+        <span class="rmeta">Link missing</span>
+        <p class="rdesc">Professional profile.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ WORK ═══════════ -->
+  <section>
+    <div class="head">
+      <h2>Things I built</h2>
+      <span class="label">Work</span>
+    </div>
+
+    <div class="rows">
+      <!-- TODO — swap for the live Vercel URL once deployed -->
+      <div class="row pending">
+        <span class="rtitle">Mini Shop</span>
+        <span class="rmeta">Not deployed</span>
+        <p class="rdesc">A working store built from nothing: catalogue with search,
+        cart, checkout, order history, and an admin panel that only administrators
+        can reach. React, FastAPI, SQLite, JWT authentication.</p>
+      </div>
+
+      <!-- TODO — needs to be hosted before it can be linked -->
+      <div class="row pending">
+        <span class="rtitle">Mini Shop — how I built it</span>
+        <span class="rmeta">Not hosted</span>
+        <p class="rdesc">The entire build explained in twelve stages, with real
+        screenshots, code and the architecture behind it.</p>
+      </div>
+
+      <!-- TODO — swap for the live Vercel URL once deployed -->
+      <div class="row pending">
+        <span class="rtitle">Job Tracker</span>
+        <span class="rmeta">Not deployed</span>
+        <p class="rdesc">Keeps a job search under control: accounts, applications
+        through every stage, filters and a dashboard of where things stand.
+        React, FastAPI, SQLite, JWT.</p>
+      </div>
+
+      <!-- TODO — swap for the GitHub repo URL once pushed -->
+      <div class="row pending">
+        <span class="rtitle">Job Harvester</span>
+        <span class="rmeta">Not published</span>
+        <p class="rdesc">A Python tool I run daily. It collects job postings, reads
+        each full description, and scores them against a rule engine — over four
+        thousand postings in a single run, duplicates resolved, results emailed on
+        a schedule.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ STACK ═══════════ -->
+  <section>
+    <div class="head">
+      <h2>What I work with</h2>
+      <span class="label">Stack</span>
+    </div>
+
+    <div class="stack">
+      <div class="strand">
+        <span class="label">Back end</span>
+        <p>Python · FastAPI · SQLAlchemy · REST APIs · JWT and bcrypt authentication</p>
+      </div>
+      <div class="strand">
+        <span class="label">Front end</span>
+        <p>React with Vite · JavaScript · HTML and CSS</p>
+      </div>
+      <div class="strand">
+        <span class="label">Data</span>
+        <p>SQLite · PostgreSQL</p>
+      </div>
+      <div class="strand">
+        <span class="label">Tooling</span>
+        <p>Git and GitHub · web scraping · automation and scripting ·
+        AI-assisted development</p>
+      </div>
+      <div class="strand">
+        <span class="label">Games</span>
+        <p>Ren'Py · Unity (basics) · game design · QA and testing</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ BACKGROUND ═══════════ -->
+  <section>
+    <div class="head">
+      <h2>Where I come from</h2>
+      <span class="label">Background</span>
+    </div>
+
+    <div class="prose">
+      <p><b>Bachelor's degree in game design</b> — EU. Game design taught me to break
+      a system into rules and test whether it holds together, which turned out to be
+      the same instinct software needs.</p>
+
+      <p><b>The move into development.</b> Two complete applications, built and
+      tested end to end, plus an automation tool that runs in production for me
+      every day.</p>
+
+      <p><b>How I communicate.</b> Italian is my first language. My written English
+      is solid — documentation, code, email — while spoken English is my weak point,
+      so I do my best work on written and asynchronous teams.</p>
+
+      <p><b>How I can be hired.</b> I am based in Italy and can work for foreign
+      companies as an employee, through an employer of record, with a VAT number
+      under the <i>regime forfettario</i>, or on occasional-work terms.</p>
+    </div>
+  </section>
+
+  <footer>
+    <span class="label">Fabrizio — Naples, Italy</span>
+    <span class="label">Junior full-stack developer</span>
+  </footer>
+
+</div>

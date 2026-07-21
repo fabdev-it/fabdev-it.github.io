@@ -184,6 +184,17 @@ a.row .rmeta::after{
 .row.pending{opacity:.62}
 .row.pending .rmeta{color:var(--accent)}
 
+/* ── jobs ─────────────────────────────────────── */
+.jobs{display:flex;flex-direction:column}
+.job{padding:1.0625rem 0;border-bottom:1px solid var(--rule);display:flex;flex-direction:column;gap:.3rem}
+.job:last-child{border-bottom:none}
+.jobhead{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:.5rem 1rem}
+.jobrole{font-weight:650;font-size:1.0625rem;letter-spacing:-.01em}
+.jobdate{font-family:var(--mono);font-size:.6875rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--muted);white-space:nowrap;padding-top:.3rem}
+.jobplace{color:var(--accent);font-size:.8125rem;font-weight:600}
+.jobdesc{margin:0;color:var(--muted);font-size:.9375rem;max-width:34rem}
+
 /* ── stack ────────────────────────────────────── */
 .stack{display:flex;flex-direction:column;gap:.85rem}
 .strand{

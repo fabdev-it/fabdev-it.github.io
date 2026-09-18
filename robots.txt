@@ -1,0 +1,8 @@
+# Il crawling è permesso di proposito: ogni pagina porta
+# <meta name="robots" content="noindex, nofollow">.
+# Bloccare il crawling qui impedirebbe ai bot di leggere quel tag,
+# e gli URL potrebbero comunque finire nei risultati di ricerca.
+# Questo file vale per tutto il dominio fabdev-it.github.io,
+# quindi copre anche i project site (es. /creta-2026/, /powerkit/).
+User-agent: *
+Disallow:

@@ -1,0 +1,43 @@
+<!doctype html><html lang="en"><head>
+<meta name="robots" content="noindex, nofollow"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<title>Ser Knight</title>
+<style>
+html,body{margin:0;height:100%;background:#2b2540;overflow:hidden;font-family:system-ui,Segoe UI,sans-serif}
+#c{position:fixed;inset:0;width:100%;height:100%;display:block;background:#2b2540}
+#load{position:fixed;inset:0;display:grid;place-items:center;background:#fbf5ec;color:#2b2540;z-index:5;transition:opacity .5s}
+#load div{text-align:center;font-weight:700;letter-spacing:.08em}
+#bar{width:260px;height:14px;border:2px solid #2b2540;border-radius:99px;margin:14px auto 0;overflow:hidden;background:#fff;box-shadow:3px 3px 0 #2b2540}
+#bar i{display:block;height:100%;width:0;background:#ffb59e}
+.b{position:fixed;bottom:10px;opacity:.85;z-index:9;font:700 13px system-ui;border:2px solid #2b2540;background:#ffe08a;color:#2b2540;border-radius:99px;padding:8px 14px;cursor:pointer;box-shadow:3px 3px 0 #2b2540}
+#snd{right:10px} #fs{right:10px;background:#fbf5ec}
+#snd.on{background:#a9dcc9}
+</style></head><body>
+<canvas id="c" tabindex="-1"></canvas>
+<div id="load"><div>LOADING<div id="bar"><i></i></div></div></div>
+<button class="b" id="snd" tabindex="-1" style="display:none">SOUND: ON</button><button class="b" id="fs" tabindex="-1">FULLSCREEN</button>
+<script>
+/* audio is ON by default; the browser unlocks WebAudio on the first click/key, so we resume then */
+window.__snd=true;var __acs=[];
+(function(){var AC=window.AudioContext||window.webkitAudioContext;if(!AC)return;
+ var P=AC.prototype.resume;
+ function W(a){var c=new AC(a);__acs.push(c);c.resume=function(){return window.__snd?P.call(c):Promise.resolve();};return c;}
+ W.prototype=AC.prototype;window.AudioContext=W;window.webkitAudioContext=W;
+ function unlock(){if(!window.__snd)return;__acs.forEach(function(c){try{if(c.state!=='running')P.call(c).catch(function(){});}catch(e){}});}
+ ['pointerdown','mousedown','touchend','click','keydown'].forEach(function(ev){addEventListener(ev,unlock,true);});
+ setInterval(function(){if(navigator.userActivation&&!navigator.userActivation.hasBeenActive)return;unlock();},500);})();
+var s=document.getElementById('snd');
+s.onclick=function(){window.__snd=!window.__snd;s.textContent='SOUND: '+(window.__snd?'ON':'OFF');s.classList.toggle('on',window.__snd);
+ __acs.forEach(function(c){try{window.__snd?c.resume():c.suspend()}catch(e){}});};
+s.textContent='SOUND: ON';s.classList.add('on');
+
+addEventListener('keydown',function(e){if(e.key===' '||e.key==='Enter'||e.key.indexOf('Arrow')===0||e.key==='Tab'){if(e.target&&e.target.tagName==='BUTTON')e.target.blur();e.preventDefault();}},true);
+var __fsb=document.getElementById('fs');if(__fsb)__fsb.onclick=function(){var e=document.documentElement;(e.requestFullscreen||e.webkitRequestFullscreen).call(e);};
+</script>
+<script src="Build/_n_gran-prix.loader.js"></script>
+<script>
+createUnityInstance(document.getElementById('c'),{
+ dataUrl:"Build/_n_gran-prix.data",frameworkUrl:"Build/_n_gran-prix.framework.js",codeUrl:"Build/_n_gran-prix.wasm",
+ streamingAssetsUrl:"StreamingAssets",companyName:"Fabrizio Amenta",productName:"Ser Knight",productVersion:"1.0",devicePixelRatio:Math.min(window.devicePixelRatio||1,2)
+},function(p){document.querySelector('#bar i').style.width=(p*100)+'%';}).then(function(){try{document.getElementById('c').focus();window.focus();}catch(e){}var l=document.getElementById('load');l.style.opacity=0;setTimeout(function(){l.remove()},600);})
+.catch(function(m){document.getElementById('load').firstChild.textContent='Could not start: '+m;});
+</script></body></html>

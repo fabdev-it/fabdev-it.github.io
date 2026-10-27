@@ -1,0 +1,2126 @@
+{
+"slowwave": [
+{
+"src": "media/pick/slowwave/001.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\hallard_A_lit.png"
+},
+{
+"src": "media/pick/slowwave/002.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\hallard_A_skin.png"
+},
+{
+"src": "media/pick/slowwave/003.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\hallard_E_lit.png"
+},
+{
+"src": "media/pick/slowwave/004.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\hallard_E_skin.png"
+},
+{
+"src": "media/pick/slowwave/005.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\hallard_I_lit.png"
+},
+{
+"src": "media/pick/slowwave/006.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\hallard_I_skin.png"
+},
+{
+"src": "media/pick/slowwave/007.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\hallard_O_lit.png"
+},
+{
+"src": "media/pick/slowwave/008.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\hallard_O_skin.png"
+},
+{
+"src": "media/pick/slowwave/009.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\hallard_U_lit.png"
+},
+{
+"src": "media/pick/slowwave/010.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\hallard_U_skin.png"
+},
+{
+"src": "media/pick/slowwave/011.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\hallard_blink_lit.png"
+},
+{
+"src": "media/pick/slowwave/012.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\hallard_blink_skin.png"
+},
+{
+"src": "media/pick/slowwave/013.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\hallard_closed_lit.png"
+},
+{
+"src": "media/pick/slowwave/014.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\hallard_closed_skin.png"
+},
+{
+"src": "media/pick/slowwave/015.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\nora_A_carb.png"
+},
+{
+"src": "media/pick/slowwave/016.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\nora_A_lit.png"
+},
+{
+"src": "media/pick/slowwave/017.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\nora_A_skin.png"
+},
+{
+"src": "media/pick/slowwave/018.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\nora_A_toon.png"
+},
+{
+"src": "media/pick/slowwave/019.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\nora_E_carb.png"
+},
+{
+"src": "media/pick/slowwave/020.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\nora_E_lit.png"
+},
+{
+"src": "media/pick/slowwave/021.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\nora_E_skin.png"
+},
+{
+"src": "media/pick/slowwave/022.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\nora_E_toon.png"
+},
+{
+"src": "media/pick/slowwave/023.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\nora_I_carb.png"
+},
+{
+"src": "media/pick/slowwave/024.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\nora_I_lit.png"
+},
+{
+"src": "media/pick/slowwave/025.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\nora_I_skin.png"
+},
+{
+"src": "media/pick/slowwave/026.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\nora_I_toon.png"
+},
+{
+"src": "media/pick/slowwave/027.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\nora_O_carb.png"
+},
+{
+"src": "media/pick/slowwave/028.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\nora_O_lit.png"
+},
+{
+"src": "media/pick/slowwave/029.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\nora_O_skin.png"
+},
+{
+"src": "media/pick/slowwave/030.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\nora_O_toon.png"
+},
+{
+"src": "media/pick/slowwave/031.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\nora_U_carb.png"
+},
+{
+"src": "media/pick/slowwave/032.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\nora_U_lit.png"
+},
+{
+"src": "media/pick/slowwave/033.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\nora_U_skin.png"
+},
+{
+"src": "media/pick/slowwave/034.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\nora_U_toon.png"
+},
+{
+"src": "media/pick/slowwave/035.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\nora_blink_carb.png"
+},
+{
+"src": "media/pick/slowwave/036.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\nora_blink_lit.png"
+},
+{
+"src": "media/pick/slowwave/037.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\nora_blink_skin.png"
+},
+{
+"src": "media/pick/slowwave/038.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\nora_blink_toon.png"
+},
+{
+"src": "media/pick/slowwave/039.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\nora_closed_carb.png"
+},
+{
+"src": "media/pick/slowwave/040.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\nora_closed_lit.png"
+},
+{
+"src": "media/pick/slowwave/041.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\nora_closed_skin.png"
+},
+{
+"src": "media/pick/slowwave/042.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\nora_closed_toon.png"
+},
+{
+"src": "media/pick/slowwave/043.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\taylor_A_lit.png"
+},
+{
+"src": "media/pick/slowwave/044.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\taylor_A_skin.png"
+},
+{
+"src": "media/pick/slowwave/045.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\taylor_E_lit.png"
+},
+{
+"src": "media/pick/slowwave/046.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\taylor_E_skin.png"
+},
+{
+"src": "media/pick/slowwave/047.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\taylor_I_lit.png"
+},
+{
+"src": "media/pick/slowwave/048.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\taylor_I_skin.png"
+},
+{
+"src": "media/pick/slowwave/049.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\taylor_O_lit.png"
+},
+{
+"src": "media/pick/slowwave/050.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\taylor_O_skin.png"
+},
+{
+"src": "media/pick/slowwave/051.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\taylor_U_lit.png"
+},
+{
+"src": "media/pick/slowwave/052.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\taylor_U_skin.png"
+},
+{
+"src": "media/pick/slowwave/053.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\taylor_blink_lit.png"
+},
+{
+"src": "media/pick/slowwave/054.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\taylor_blink_skin.png"
+},
+{
+"src": "media/pick/slowwave/055.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\taylor_closed_lit.png"
+},
+{
+"src": "media/pick/slowwave/056.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\v2\\render\\taylor_closed_skin.png"
+},
+{
+"src": "media/pick/slowwave/057.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\render\\hallard_A_lit.png"
+},
+{
+"src": "media/pick/slowwave/058.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\render\\hallard_A_toon.png"
+},
+{
+"src": "media/pick/slowwave/059.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\render\\hallard_E_lit.png"
+},
+{
+"src": "media/pick/slowwave/060.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\render\\hallard_E_toon.png"
+},
+{
+"src": "media/pick/slowwave/061.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\render\\hallard_I_lit.png"
+},
+{
+"src": "media/pick/slowwave/062.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\render\\hallard_I_toon.png"
+},
+{
+"src": "media/pick/slowwave/063.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\render\\hallard_O_lit.png"
+},
+{
+"src": "media/pick/slowwave/064.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\render\\hallard_O_toon.png"
+},
+{
+"src": "media/pick/slowwave/065.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\render\\hallard_U_lit.png"
+},
+{
+"src": "media/pick/slowwave/066.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\render\\hallard_U_toon.png"
+},
+{
+"src": "media/pick/slowwave/067.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\render\\hallard_blink_lit.png"
+},
+{
+"src": "media/pick/slowwave/068.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\render\\hallard_blink_toon.png"
+},
+{
+"src": "media/pick/slowwave/069.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\render\\hallard_closed_lit.png"
+},
+{
+"src": "media/pick/slowwave/070.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\render\\nora_A_lit.png"
+},
+{
+"src": "media/pick/slowwave/071.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\render\\nora_A_toon.png"
+},
+{
+"src": "media/pick/slowwave/072.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\render\\nora_E_lit.png"
+},
+{
+"src": "media/pick/slowwave/073.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\render\\nora_E_toon.png"
+},
+{
+"src": "media/pick/slowwave/074.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\render\\nora_I_lit.png"
+},
+{
+"src": "media/pick/slowwave/075.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\render\\nora_I_toon.png"
+},
+{
+"src": "media/pick/slowwave/076.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\render\\nora_O_lit.png"
+},
+{
+"src": "media/pick/slowwave/077.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\render\\nora_O_toon.png"
+},
+{
+"src": "media/pick/slowwave/078.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\render\\nora_U_lit.png"
+},
+{
+"src": "media/pick/slowwave/079.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\render\\nora_U_toon.png"
+},
+{
+"src": "media/pick/slowwave/080.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\render\\nora_blink_lit.png"
+},
+{
+"src": "media/pick/slowwave/081.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\render\\nora_blink_toon.png"
+},
+{
+"src": "media/pick/slowwave/082.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\render\\nora_closed_lit.png"
+},
+{
+"src": "media/pick/slowwave/083.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\ritratti-prova\\render\\nora_closed_toon.png"
+},
+{
+"src": "media/pick/slowwave/084.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2d\\shots\\qa01_title.png"
+},
+{
+"src": "media/pick/slowwave/085.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2d\\shots\\qa02_settings.png"
+},
+{
+"src": "media/pick/slowwave/086.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2d\\shots\\qa03_settings_changed.png"
+},
+{
+"src": "media/pick/slowwave/087.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2d\\shots\\qa04_small_window.png"
+},
+{
+"src": "media/pick/slowwave/088.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2d\\shots\\qa05_credits.png"
+},
+{
+"src": "media/pick/slowwave/089.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2d\\shots\\qa06_play_textbox.png"
+},
+{
+"src": "media/pick/slowwave/090.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2d\\shots\\qa07_log.png"
+},
+{
+"src": "media/pick/slowwave/091.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2d\\shots\\qa08_hidden.png"
+},
+{
+"src": "media/pick/slowwave/092.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2d\\shots\\qa09_pause.png"
+},
+{
+"src": "media/pick/slowwave/093.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2d\\shots\\qa10_choice.png"
+},
+{
+"src": "media/pick/slowwave/094.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2d\\shots\\qa11_chapters.png"
+},
+{
+"src": "media/pick/slowwave/095.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2d\\shots\\qa12_after_skip.png"
+},
+{
+"src": "media/pick/slowwave/096.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2d\\shots\\qa13_endcard.png"
+},
+{
+"src": "media/pick/slowwave/097.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2d\\shots\\qa_interaction_form.png"
+},
+{
+"src": "media/pick/slowwave/098.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2d\\shots\\qa_interaction_form_done.png"
+},
+{
+"src": "media/pick/slowwave/099.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2d\\shots\\qa_interaction_hold.png"
+},
+{
+"src": "media/pick/slowwave/100.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2d\\shots\\qa_interaction_rhythm.png"
+},
+{
+"src": "media/pick/slowwave/101.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2d\\shots\\qa_interaction_tape.png"
+},
+{
+"src": "media/pick/slowwave/102.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2c2\\shots\\qa01_title.png"
+},
+{
+"src": "media/pick/slowwave/103.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2c2\\shots\\qa02_settings.png"
+},
+{
+"src": "media/pick/slowwave/104.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2c2\\shots\\qa03_settings_changed.png"
+},
+{
+"src": "media/pick/slowwave/105.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2c2\\shots\\qa04_small_window.png"
+},
+{
+"src": "media/pick/slowwave/106.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2c2\\shots\\qa05_credits.png"
+},
+{
+"src": "media/pick/slowwave/107.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2c2\\shots\\qa06_play_textbox.png"
+},
+{
+"src": "media/pick/slowwave/108.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2c2\\shots\\qa07_log.png"
+},
+{
+"src": "media/pick/slowwave/109.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2c2\\shots\\qa08_hidden.png"
+},
+{
+"src": "media/pick/slowwave/110.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2c2\\shots\\qa09_pause.png"
+},
+{
+"src": "media/pick/slowwave/111.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2c2\\shots\\qa10_choice.png"
+},
+{
+"src": "media/pick/slowwave/112.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2c2\\shots\\qa11_chapters.png"
+},
+{
+"src": "media/pick/slowwave/113.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2c2\\shots\\qa12_after_skip.png"
+},
+{
+"src": "media/pick/slowwave/114.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2c2\\shots\\qa13_endcard.png"
+},
+{
+"src": "media/pick/slowwave/115.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2c2\\shots\\qa_interaction_form.png"
+},
+{
+"src": "media/pick/slowwave/116.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2c2\\shots\\qa_interaction_form_done.png"
+},
+{
+"src": "media/pick/slowwave/117.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2c2\\shots\\qa_interaction_hold.png"
+},
+{
+"src": "media/pick/slowwave/118.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2c2\\shots\\qa_interaction_rhythm.png"
+},
+{
+"src": "media/pick/slowwave/119.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2c2\\shots\\qa_interaction_tape.png"
+},
+{
+"src": "media/pick/slowwave/120.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2c\\shots\\qa02_settings.png"
+},
+{
+"src": "media/pick/slowwave/121.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2c\\shots\\qa03_settings_changed.png"
+},
+{
+"src": "media/pick/slowwave/122.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2c\\shots\\qa04_small_window.png"
+},
+{
+"src": "media/pick/slowwave/123.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2c\\shots\\qa06_play_textbox.png"
+},
+{
+"src": "media/pick/slowwave/124.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2c\\shots\\qa07_log.png"
+},
+{
+"src": "media/pick/slowwave/125.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2c\\shots\\qa08_hidden.png"
+},
+{
+"src": "media/pick/slowwave/126.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2c\\shots\\qa09_pause.png"
+},
+{
+"src": "media/pick/slowwave/127.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2c\\shots\\qa10_choice.png"
+},
+{
+"src": "media/pick/slowwave/128.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2c\\shots\\qa11_chapters.png"
+},
+{
+"src": "media/pick/slowwave/129.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2c\\shots\\qa12_after_skip.png"
+},
+{
+"src": "media/pick/slowwave/130.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2c\\shots\\qa13_endcard.png"
+},
+{
+"src": "media/pick/slowwave/131.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2c\\shots\\qa_interaction_form.png"
+},
+{
+"src": "media/pick/slowwave/132.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2c\\shots\\qa_interaction_form_done.png"
+},
+{
+"src": "media/pick/slowwave/133.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2c\\shots\\qa_interaction_hold.png"
+},
+{
+"src": "media/pick/slowwave/134.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2c\\shots\\qa_interaction_rhythm.png"
+},
+{
+"src": "media/pick/slowwave/135.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2c\\shots\\qa_interaction_tape.png"
+},
+{
+"src": "media/pick/slowwave/136.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\dbg1\\shots\\00_title_ui.png"
+},
+{
+"src": "media/pick/slowwave/137.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\dbg1\\shots\\D_bath1.png"
+},
+{
+"src": "media/pick/slowwave/138.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\dbg1\\shots\\D_bath2.png"
+},
+{
+"src": "media/pick/slowwave/139.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\dbg1\\shots\\D_bath3.png"
+},
+{
+"src": "media/pick/slowwave/140.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\dbg1\\shots\\D_bath4.png"
+},
+{
+"src": "media/pick/slowwave/141.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\dbg1\\shots\\D_bed1.png"
+},
+{
+"src": "media/pick/slowwave/142.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\dbg1\\shots\\D_bed2.png"
+},
+{
+"src": "media/pick/slowwave/143.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\dbg1\\shots\\D_bed3.png"
+},
+{
+"src": "media/pick/slowwave/144.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\dbg1\\shots\\D_hall1.png"
+},
+{
+"src": "media/pick/slowwave/145.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\dbg1\\shots\\D_hall2.png"
+},
+{
+"src": "media/pick/slowwave/146.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\dbg1\\shots\\D_hall3.png"
+},
+{
+"src": "media/pick/slowwave/147.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\dbg1\\shots\\D_kit1.png"
+},
+{
+"src": "media/pick/slowwave/148.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\dbg1\\shots\\D_kit2.png"
+},
+{
+"src": "media/pick/slowwave/149.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\dbg1\\shots\\D_kit3.png"
+},
+{
+"src": "media/pick/slowwave/150.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\dbg1\\shots\\D_liv1.png"
+},
+{
+"src": "media/pick/slowwave/151.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\dbg1\\shots\\D_liv2.png"
+},
+{
+"src": "media/pick/slowwave/152.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\dbg1\\shots\\D_liv3.png"
+},
+{
+"src": "media/pick/slowwave/153.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\dbg1\\shots\\D_liv4.png"
+},
+{
+"src": "media/pick/slowwave/154.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-demo\\shots\\qa01_title.png"
+},
+{
+"src": "media/pick/slowwave/155.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-demo\\shots\\qa02_settings.png"
+},
+{
+"src": "media/pick/slowwave/156.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-demo\\shots\\qa03_settings_changed.png"
+},
+{
+"src": "media/pick/slowwave/157.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-demo\\shots\\qa04_small_window.png"
+},
+{
+"src": "media/pick/slowwave/158.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-demo\\shots\\qa06_play_textbox.png"
+},
+{
+"src": "media/pick/slowwave/159.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-demo\\shots\\qa07_log.png"
+},
+{
+"src": "media/pick/slowwave/160.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-demo\\shots\\qa08_hidden.png"
+},
+{
+"src": "media/pick/slowwave/161.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-demo\\shots\\qa09_pause.png"
+},
+{
+"src": "media/pick/slowwave/162.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-demo\\shots\\qa10_choice.png"
+},
+{
+"src": "media/pick/slowwave/163.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-demo\\shots\\qa11_chapters.png"
+},
+{
+"src": "media/pick/slowwave/164.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-demo\\shots\\qa12_after_skip.png"
+},
+{
+"src": "media/pick/slowwave/165.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-demo\\shots\\qa13_endcard.png"
+},
+{
+"src": "media/pick/slowwave/166.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-demo\\shots\\qa_interaction_document.png"
+},
+{
+"src": "media/pick/slowwave/167.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-demo\\shots\\qa_interaction_hold.png"
+},
+{
+"src": "media/pick/slowwave/168.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-demo\\shots\\qa_interaction_inspect.png"
+},
+{
+"src": "media/pick/slowwave/169.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-demo\\shots\\qa_interaction_inspect_done.png"
+},
+{
+"src": "media/pick/slowwave/170.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2a\\shots\\qa02_settings.png"
+},
+{
+"src": "media/pick/slowwave/171.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2a\\shots\\qa03_settings_changed.png"
+},
+{
+"src": "media/pick/slowwave/172.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2a\\shots\\qa04_small_window.png"
+},
+{
+"src": "media/pick/slowwave/173.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2a\\shots\\qa06_play_textbox.png"
+},
+{
+"src": "media/pick/slowwave/174.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2a\\shots\\qa07_log.png"
+},
+{
+"src": "media/pick/slowwave/175.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2a\\shots\\qa08_hidden.png"
+},
+{
+"src": "media/pick/slowwave/176.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2a\\shots\\qa09_pause.png"
+},
+{
+"src": "media/pick/slowwave/177.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2a\\shots\\qa10_choice.png"
+},
+{
+"src": "media/pick/slowwave/178.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2a\\shots\\qa11_chapters.png"
+},
+{
+"src": "media/pick/slowwave/179.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2a\\shots\\qa12_after_skip.png"
+},
+{
+"src": "media/pick/slowwave/180.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2a\\shots\\qa13_endcard.png"
+},
+{
+"src": "media/pick/slowwave/181.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2a\\shots\\qa_interaction_form.png"
+},
+{
+"src": "media/pick/slowwave/182.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2a\\shots\\qa_interaction_form_done.png"
+},
+{
+"src": "media/pick/slowwave/183.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2a\\shots\\qa_interaction_hold.png"
+},
+{
+"src": "media/pick/slowwave/184.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa-act2a\\shots\\qa_interaction_tape.png"
+},
+{
+"src": "media/pick/slowwave/185.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa1\\shots\\qa01_title.png"
+},
+{
+"src": "media/pick/slowwave/186.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa1\\shots\\qa02_settings.png"
+},
+{
+"src": "media/pick/slowwave/187.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa1\\shots\\qa03_settings_changed.png"
+},
+{
+"src": "media/pick/slowwave/188.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa1\\shots\\qa04_small_window.png"
+},
+{
+"src": "media/pick/slowwave/189.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa1\\shots\\qa05_credits.png"
+},
+{
+"src": "media/pick/slowwave/190.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa1\\shots\\qa06_play_textbox.png"
+},
+{
+"src": "media/pick/slowwave/191.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa1\\shots\\qa07_log.png"
+},
+{
+"src": "media/pick/slowwave/192.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa1\\shots\\qa08_hidden.png"
+},
+{
+"src": "media/pick/slowwave/193.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa1\\shots\\qa09_pause.png"
+},
+{
+"src": "media/pick/slowwave/194.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa1\\shots\\qa11_chapters.png"
+},
+{
+"src": "media/pick/slowwave/195.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa1\\shots\\qa12_after_skip.png"
+},
+{
+"src": "media/pick/slowwave/196.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa1\\shots\\qa13_endcard.png"
+},
+{
+"src": "media/pick/slowwave/197.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa1\\shots\\qa_interaction_document.png"
+},
+{
+"src": "media/pick/slowwave/198.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa1\\shots\\qa_interaction_hold.png"
+},
+{
+"src": "media/pick/slowwave/199.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa1\\shots\\qa_interaction_inspect.png"
+},
+{
+"src": "media/pick/slowwave/200.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\qa1\\shots\\qa_interaction_inspect_done.png"
+},
+{
+"src": "media/pick/slowwave/201.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act1\\shots\\00_title_ui.png"
+},
+{
+"src": "media/pick/slowwave/202.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act1\\shots\\S03_05_time_card_1.png"
+},
+{
+"src": "media/pick/slowwave/203.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act1b\\shots\\S01_06_dig_a.png"
+},
+{
+"src": "media/pick/slowwave/204.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act1b\\shots\\S03_11_hand_blanket.png"
+},
+{
+"src": "media/pick/slowwave/205.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act1c\\shots\\S02_02_hallard_enters.png"
+},
+{
+"src": "media/pick/slowwave/206.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act1c\\shots\\S04_06_hallard.png"
+},
+{
+"src": "media/pick/slowwave/207.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2a-t1\\shots\\S06_04_push_in.png"
+},
+{
+"src": "media/pick/slowwave/208.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2a-t1\\shots\\S08_04_wave.png"
+},
+{
+"src": "media/pick/slowwave/209.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2a-t2\\shots\\S02_03_nora_back.png"
+},
+{
+"src": "media/pick/slowwave/210.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2a-t2\\shots\\S04_07_taylor.png"
+},
+{
+"src": "media/pick/slowwave/211.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2a-t2\\shots\\S06_06_machine.png"
+},
+{
+"src": "media/pick/slowwave/212.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2a-t2\\shots\\S08_06_dont_look.png"
+},
+{
+"src": "media/pick/slowwave/213.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2a-t3\\shots\\S02_01_ws_room.png"
+},
+{
+"src": "media/pick/slowwave/214.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2a-t3\\shots\\S04_05_pullout.png"
+},
+{
+"src": "media/pick/slowwave/215.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2a-t3\\shots\\S06_04_push_in.png"
+},
+{
+"src": "media/pick/slowwave/216.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2a-t3\\shots\\S08_04_wave.png"
+},
+{
+"src": "media/pick/slowwave/217.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2a-t4\\shots\\S01_09_roots.png"
+},
+{
+"src": "media/pick/slowwave/218.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2a-t4\\shots\\S04_03_bed_empty.png"
+},
+{
+"src": "media/pick/slowwave/219.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2a-t4\\shots\\S06_02_time_card.png"
+},
+{
+"src": "media/pick/slowwave/220.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2a-t4\\shots\\S08_02_mirror_room.png"
+},
+{
+"src": "media/pick/slowwave/221.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2a-t5\\shots\\S01_08_dig_c.png"
+},
+{
+"src": "media/pick/slowwave/222.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2a-t5\\shots\\S04_02_eeg_monitor.png"
+},
+{
+"src": "media/pick/slowwave/223.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2a-t5\\shots\\S06_01_aftermath.png"
+},
+{
+"src": "media/pick/slowwave/224.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2a-t5\\shots\\S08_01_profile.png"
+},
+{
+"src": "media/pick/slowwave/225.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2a-t6\\shots\\S01_07_dig_b.png"
+},
+{
+"src": "media/pick/slowwave/226.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2a-t6\\shots\\S04_01_backs.png"
+},
+{
+"src": "media/pick/slowwave/227.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2a-t6\\shots\\S05_14_step_away.png"
+},
+{
+"src": "media/pick/slowwave/228.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2a-t6\\shots\\S07_11_ws_choice.png"
+},
+{
+"src": "media/pick/slowwave/229.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2a-t7\\shots\\S01_06_dig_a.png"
+},
+{
+"src": "media/pick/slowwave/230.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2a-t7\\shots\\S03_11_hand_blanket.png"
+},
+{
+"src": "media/pick/slowwave/231.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2a-t7\\shots\\S05_13_hall_earth.png"
+},
+{
+"src": "media/pick/slowwave/232.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2a-t7\\shots\\S07_10_shoulders_drop.png"
+},
+{
+"src": "media/pick/slowwave/233.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2a-t8\\shots\\S01_05_ecu_own_wrist.png"
+},
+{
+"src": "media/pick/slowwave/234.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2a-t8\\shots\\S03_10_headcam.png"
+},
+{
+"src": "media/pick/slowwave/235.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2a-t8\\shots\\S05_12_door_pull.png"
+},
+{
+"src": "media/pick/slowwave/236.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2a-t8\\shots\\S07_09_tv_off.png"
+},
+{
+"src": "media/pick/slowwave/237.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2a-t9\\shots\\S01_04_ecu_dead_wrist.png"
+},
+{
+"src": "media/pick/slowwave/238.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2a-t9\\shots\\S03_09_lying.png"
+},
+{
+"src": "media/pick/slowwave/239.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2a-t9\\shots\\S05_11_curtains_open.png"
+},
+{
+"src": "media/pick/slowwave/240.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2a-t9\\shots\\S07_08_headcam.png"
+},
+{
+"src": "media/pick/slowwave/241.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2a\\shots\\S06_08_knife.png"
+},
+{
+"src": "media/pick/slowwave/242.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2a\\shots\\S08_09_mirror_alone.png"
+},
+{
+"src": "media/pick/slowwave/243.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2b-run2\\shots\\S02_04_taylor_back.png"
+},
+{
+"src": "media/pick/slowwave/244.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2b-run2\\shots\\S04_08_mic.png"
+},
+{
+"src": "media/pick/slowwave/245.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2b-run2\\shots\\S06_07_message4_deep.png"
+},
+{
+"src": "media/pick/slowwave/246.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2b-run2\\shots\\S08_08_tap_off.png"
+},
+{
+"src": "media/pick/slowwave/247.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2b-run\\shots\\S02_03_nora_back.png"
+},
+{
+"src": "media/pick/slowwave/248.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2b-run\\shots\\S04_07_taylor.png"
+},
+{
+"src": "media/pick/slowwave/249.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2b-run\\shots\\S06_06_machine.png"
+},
+{
+"src": "media/pick/slowwave/250.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2b-run\\shots\\S08_07_reflection_turns.png"
+},
+{
+"src": "media/pick/slowwave/251.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2b\\shots\\S05_13_hall_earth.png"
+},
+{
+"src": "media/pick/slowwave/252.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2b\\shots\\S07_10_shoulders_drop.png"
+},
+{
+"src": "media/pick/slowwave/253.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-final2\\shots\\S01_05_ecu_own_wrist.png"
+},
+{
+"src": "media/pick/slowwave/254.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-final2\\shots\\S03_10_headcam.png"
+},
+{
+"src": "media/pick/slowwave/255.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-final2\\shots\\S05_12_door_pull.png"
+},
+{
+"src": "media/pick/slowwave/256.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-final2\\shots\\S07_09_tv_off.png"
+},
+{
+"src": "media/pick/slowwave/257.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-final2\\shots\\S09_05_shovel_up.png"
+},
+{
+"src": "media/pick/slowwave/258.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-final2\\shots\\S12_07_branch_ws.png"
+},
+{
+"src": "media/pick/slowwave/259.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-final2\\shots\\S15_01_mc_back.png"
+},
+{
+"src": "media/pick/slowwave/260.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-final3\\shots\\S02_07_empty_chair.png"
+},
+{
+"src": "media/pick/slowwave/261.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-final3\\shots\\S05_02_doll.png"
+},
+{
+"src": "media/pick/slowwave/262.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-final3\\shots\\S06_10_lab_paper.png"
+},
+{
+"src": "media/pick/slowwave/263.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-final3\\shots\\S08_10_sofa_drawing_pov.png"
+},
+{
+"src": "media/pick/slowwave/264.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-final3\\shots\\S11_03_socks_hands.png"
+},
+{
+"src": "media/pick/slowwave/265.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-final3\\shots\\S13_05_stencil.png"
+},
+{
+"src": "media/pick/slowwave/266.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-final\\shots\\S01_07_dig_b.png"
+},
+{
+"src": "media/pick/slowwave/267.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-final\\shots\\S04_01_backs.png"
+},
+{
+"src": "media/pick/slowwave/268.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-final\\shots\\S05_14_step_away.png"
+},
+{
+"src": "media/pick/slowwave/269.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-final\\shots\\S07_11_ws_choice.png"
+},
+{
+"src": "media/pick/slowwave/270.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-final\\shots\\S09_07_soil_stairs.png"
+},
+{
+"src": "media/pick/slowwave/271.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-final\\shots\\S12_09_small_bones.png"
+},
+{
+"src": "media/pick/slowwave/272.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-final\\shots\\S15_03_stairs_right.png"
+},
+{
+"src": "media/pick/slowwave/273.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-r1\\shots\\S12_06_lab_two_hours.png"
+},
+{
+"src": "media/pick/slowwave/274.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-r2\\shots\\S12_07_branch_ws.png"
+},
+{
+"src": "media/pick/slowwave/275.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-r2\\shots\\S15_01_mc_back.png"
+},
+{
+"src": "media/pick/slowwave/276.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-t1\\shots\\S01_01_clay_cone.png"
+},
+{
+"src": "media/pick/slowwave/277.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-t1\\shots\\S03_06_time_card_2.png"
+},
+{
+"src": "media/pick/slowwave/278.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-t1\\shots\\S05_08_at_the_drawing.png"
+},
+{
+"src": "media/pick/slowwave/279.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-t1\\shots\\S07_05_tape_pan.png"
+},
+{
+"src": "media/pick/slowwave/280.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-t1\\shots\\S09_01_supplies.png"
+},
+{
+"src": "media/pick/slowwave/281.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-t1\\shots\\S12_03_dead_shoe.png"
+},
+{
+"src": "media/pick/slowwave/282.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-t1\\shots\\S14_01_locked_wide.png"
+},
+{
+"src": "media/pick/slowwave/283.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-t2\\shots\\S08_12_doll_on_pillow.png"
+},
+{
+"src": "media/pick/slowwave/284.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-t2\\shots\\S11_06_echo_turn.png"
+},
+{
+"src": "media/pick/slowwave/285.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-t2\\shots\\S13_08_kneel.png"
+},
+{
+"src": "media/pick/slowwave/286.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-t3\\shots\\S11_03_socks_hands.png"
+},
+{
+"src": "media/pick/slowwave/287.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-t3\\shots\\S15_05_choice.png"
+},
+{
+"src": "media/pick/slowwave/288.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-t4\\shots\\S09_06_window_broken.png"
+},
+{
+"src": "media/pick/slowwave/289.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-t4\\shots\\S12_08_figure_bones.png"
+},
+{
+"src": "media/pick/slowwave/290.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-t4\\shots\\S15_02_tunnel_left.png"
+},
+{
+"src": "media/pick/slowwave/291.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-t5\\shots\\S09_03_push_in.png"
+},
+{
+"src": "media/pick/slowwave/292.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-t5\\shots\\S12_05_headset_on_floor.png"
+},
+{
+"src": "media/pick/slowwave/293.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c-t5\\shots\\S14_03_back_to_the_dark.png"
+},
+{
+"src": "media/pick/slowwave/294.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c\\shots\\S10_07_hand_flat.png"
+},
+{
+"src": "media/pick/slowwave/295.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2c\\shots\\S13_02_torch_taped.png"
+},
+{
+"src": "media/pick/slowwave/296.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2d-final\\shots\\S01_04_ecu_dead_wrist.png"
+},
+{
+"src": "media/pick/slowwave/297.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2d-final\\shots\\S03_09_lying.png"
+},
+{
+"src": "media/pick/slowwave/298.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2d-final\\shots\\S05_11_curtains_open.png"
+},
+{
+"src": "media/pick/slowwave/299.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2d-final\\shots\\S07_08_headcam.png"
+},
+{
+"src": "media/pick/slowwave/300.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\scp-vn\\foto-act2d-final\\shots\\S09_05_shovel_up.png"
+}
+],
+"fox": [
+{
+"src": "media/pick/fox/001.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\fabdev-nuovo\\media\\fox-1.png"
+},
+{
+"src": "media/pick/fox/002.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\fabdev-nuovo\\media\\fox-2.png"
+},
+{
+"src": "media/pick/fox/003.jpg",
+"orig": "C:\\Users\\Fabrizio\\neutral\\fabdev-nuovo\\media\\fox-compare.png"
+},
+{
+"src": "media/pick/fox/004.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season\\foto\\gioco-2-pieno.png"
+},
+{
+"src": "media/pick/fox/005.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season\\foto\\gioco-4-sera.png"
+},
+{
+"src": "media/pick/fox/006.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season\\foto\\gioco-5-notte.png"
+},
+{
+"src": "media/pick/fox/007.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\F01\\f0000.png"
+},
+{
+"src": "media/pick/fox/008.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\F01\\f0045.png"
+},
+{
+"src": "media/pick/fox/009.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\F01\\f0090.png"
+},
+{
+"src": "media/pick/fox/010.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\F01\\f0135.png"
+},
+{
+"src": "media/pick/fox/011.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\F04\\f0018.png"
+},
+{
+"src": "media/pick/fox/012.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\F04\\f0063.png"
+},
+{
+"src": "media/pick/fox/013.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\F04\\f0108.png"
+},
+{
+"src": "media/pick/fox/014.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\F05\\f0009.png"
+},
+{
+"src": "media/pick/fox/015.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\F05\\f0054.png"
+},
+{
+"src": "media/pick/fox/016.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\F05\\f0099.png"
+},
+{
+"src": "media/pick/fox/017.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\F06\\f0000.png"
+},
+{
+"src": "media/pick/fox/018.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\F06\\f0045.png"
+},
+{
+"src": "media/pick/fox/019.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\F06\\f0090.png"
+},
+{
+"src": "media/pick/fox/020.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\F07\\f0015.png"
+},
+{
+"src": "media/pick/fox/021.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\F07\\f0060.png"
+},
+{
+"src": "media/pick/fox/022.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\F07\\f0105.png"
+},
+{
+"src": "media/pick/fox/023.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\F08\\f0006.png"
+},
+{
+"src": "media/pick/fox/024.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\F08\\f0051.png"
+},
+{
+"src": "media/pick/fox/025.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\F08\\f0096.png"
+},
+{
+"src": "media/pick/fox/026.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\F08\\f0141.png"
+},
+{
+"src": "media/pick/fox/027.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\F08\\f0186.png"
+},
+{
+"src": "media/pick/fox/028.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\I01\\f0039.png"
+},
+{
+"src": "media/pick/fox/029.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\I01\\f0084.png"
+},
+{
+"src": "media/pick/fox/030.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\I02\\f0033.png"
+},
+{
+"src": "media/pick/fox/031.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\I02\\f0078.png"
+},
+{
+"src": "media/pick/fox/032.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\I03\\f0027.png"
+},
+{
+"src": "media/pick/fox/033.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\I03\\f0072.png"
+},
+{
+"src": "media/pick/fox/034.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\I03\\f0117.png"
+},
+{
+"src": "media/pick/fox/035.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\I04\\f0018.png"
+},
+{
+"src": "media/pick/fox/036.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\I04\\f0063.png"
+},
+{
+"src": "media/pick/fox/037.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\I05\\f0012.png"
+},
+{
+"src": "media/pick/fox/038.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\I05\\f0057.png"
+},
+{
+"src": "media/pick/fox/039.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\I05\\f0102.png"
+},
+{
+"src": "media/pick/fox/040.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\I06\\f0027.png"
+},
+{
+"src": "media/pick/fox/041.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\I06\\f0072.png"
+},
+{
+"src": "media/pick/fox/042.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\I08\\f0036.png"
+},
+{
+"src": "media/pick/fox/043.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\I08\\f0081.png"
+},
+{
+"src": "media/pick/fox/044.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\I09\\f0006.png"
+},
+{
+"src": "media/pick/fox/045.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\I09\\f0051.png"
+},
+{
+"src": "media/pick/fox/046.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\I09\\f0096.png"
+},
+{
+"src": "media/pick/fox/047.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\I10\\f0021.png"
+},
+{
+"src": "media/pick/fox/048.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\I10\\f0066.png"
+},
+{
+"src": "media/pick/fox/049.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\I10\\f0111.png"
+},
+{
+"src": "media/pick/fox/050.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\I10\\f0156.png"
+},
+{
+"src": "media/pick/fox/051.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\I12\\f0024.png"
+},
+{
+"src": "media/pick/fox/052.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\I12\\f0069.png"
+},
+{
+"src": "media/pick/fox/053.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\I14\\f0033.png"
+},
+{
+"src": "media/pick/fox/054.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\I14\\f0078.png"
+},
+{
+"src": "media/pick/fox/055.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\L01\\f0042.png"
+},
+{
+"src": "media/pick/fox/056.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\L01\\f0087.png"
+},
+{
+"src": "media/pick/fox/057.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\L01\\f0132.png"
+},
+{
+"src": "media/pick/fox/058.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\L02\\f0033.png"
+},
+{
+"src": "media/pick/fox/059.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\L02\\f0078.png"
+},
+{
+"src": "media/pick/fox/060.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\L03\\f0003.png"
+},
+{
+"src": "media/pick/fox/061.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\L03\\f0048.png"
+},
+{
+"src": "media/pick/fox/062.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\L03\\f0093.png"
+},
+{
+"src": "media/pick/fox/063.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\L04\\f0018.png"
+},
+{
+"src": "media/pick/fox/064.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\L04\\f0063.png"
+},
+{
+"src": "media/pick/fox/065.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\L04\\f0108.png"
+},
+{
+"src": "media/pick/fox/066.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\L05\\f0009.png"
+},
+{
+"src": "media/pick/fox/067.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\L05\\f0054.png"
+},
+{
+"src": "media/pick/fox/068.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\L05\\f0099.png"
+},
+{
+"src": "media/pick/fox/069.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\L05\\f0144.png"
+},
+{
+"src": "media/pick/fox/070.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\L06\\f0021.png"
+},
+{
+"src": "media/pick/fox/071.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\L06\\f0066.png"
+},
+{
+"src": "media/pick/fox/072.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\L06\\f0111.png"
+},
+{
+"src": "media/pick/fox/073.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\L07\\f0012.png"
+},
+{
+"src": "media/pick/fox/074.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\L07\\f0057.png"
+},
+{
+"src": "media/pick/fox/075.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\L07\\f0102.png"
+},
+{
+"src": "media/pick/fox/076.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\L08\\f0003.png"
+},
+{
+"src": "media/pick/fox/077.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\L08\\f0048.png"
+},
+{
+"src": "media/pick/fox/078.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\L08\\f0093.png"
+},
+{
+"src": "media/pick/fox/079.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\L08\\f0138.png"
+},
+{
+"src": "media/pick/fox/080.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\L09\\f0039.png"
+},
+{
+"src": "media/pick/fox/081.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\L09\\f0084.png"
+},
+{
+"src": "media/pick/fox/082.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\L09\\f0129.png"
+},
+{
+"src": "media/pick/fox/083.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M02\\f0033.png"
+},
+{
+"src": "media/pick/fox/084.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M02\\f0078.png"
+},
+{
+"src": "media/pick/fox/085.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M02\\f0123.png"
+},
+{
+"src": "media/pick/fox/086.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M02\\f0168.png"
+},
+{
+"src": "media/pick/fox/087.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M03\\f0021.png"
+},
+{
+"src": "media/pick/fox/088.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M03\\f0066.png"
+},
+{
+"src": "media/pick/fox/089.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M03\\f0111.png"
+},
+{
+"src": "media/pick/fox/090.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M03\\f0156.png"
+},
+{
+"src": "media/pick/fox/091.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M04\\f0033.png"
+},
+{
+"src": "media/pick/fox/092.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M04\\f0078.png"
+},
+{
+"src": "media/pick/fox/093.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M04\\f0123.png"
+},
+{
+"src": "media/pick/fox/094.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M05\\f0024.png"
+},
+{
+"src": "media/pick/fox/095.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M05\\f0069.png"
+},
+{
+"src": "media/pick/fox/096.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M05\\f0114.png"
+},
+{
+"src": "media/pick/fox/097.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M06\\f0015.png"
+},
+{
+"src": "media/pick/fox/098.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M06\\f0060.png"
+},
+{
+"src": "media/pick/fox/099.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M06\\f0105.png"
+},
+{
+"src": "media/pick/fox/100.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M06\\f0150.png"
+},
+{
+"src": "media/pick/fox/101.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M07\\f0027.png"
+},
+{
+"src": "media/pick/fox/102.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M07\\f0072.png"
+},
+{
+"src": "media/pick/fox/103.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M07\\f0117.png"
+},
+{
+"src": "media/pick/fox/104.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M07\\f0162.png"
+},
+{
+"src": "media/pick/fox/105.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M07\\f0207.png"
+},
+{
+"src": "media/pick/fox/106.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M09\\f0003.png"
+},
+{
+"src": "media/pick/fox/107.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M09\\f0048.png"
+},
+{
+"src": "media/pick/fox/108.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M09\\f0093.png"
+},
+{
+"src": "media/pick/fox/109.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M09\\f0138.png"
+},
+{
+"src": "media/pick/fox/110.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M10\\f0039.png"
+},
+{
+"src": "media/pick/fox/111.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M10\\f0084.png"
+},
+{
+"src": "media/pick/fox/112.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M10\\f0129.png"
+},
+{
+"src": "media/pick/fox/113.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M10\\f0174.png"
+},
+{
+"src": "media/pick/fox/114.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M11\\f0003.png"
+},
+{
+"src": "media/pick/fox/115.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M11\\f0048.png"
+},
+{
+"src": "media/pick/fox/116.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M11\\f0093.png"
+},
+{
+"src": "media/pick/fox/117.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M11\\f0138.png"
+},
+{
+"src": "media/pick/fox/118.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M12\\f0039.png"
+},
+{
+"src": "media/pick/fox/119.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M12\\f0084.png"
+},
+{
+"src": "media/pick/fox/120.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M12\\f0129.png"
+},
+{
+"src": "media/pick/fox/121.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M13\\f0030.png"
+},
+{
+"src": "media/pick/fox/122.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M13\\f0075.png"
+},
+{
+"src": "media/pick/fox/123.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M13\\f0120.png"
+},
+{
+"src": "media/pick/fox/124.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M13\\f0165.png"
+},
+{
+"src": "media/pick/fox/125.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M14\\f0042.png"
+},
+{
+"src": "media/pick/fox/126.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M14\\f0087.png"
+},
+{
+"src": "media/pick/fox/127.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\M14\\f0132.png"
+},
+{
+"src": "media/pick/fox/128.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O01\\f0033.png"
+},
+{
+"src": "media/pick/fox/129.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O01\\f0078.png"
+},
+{
+"src": "media/pick/fox/130.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O02\\f0003.png"
+},
+{
+"src": "media/pick/fox/131.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O02\\f0048.png"
+},
+{
+"src": "media/pick/fox/132.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O02\\f0093.png"
+},
+{
+"src": "media/pick/fox/133.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O03\\f0018.png"
+},
+{
+"src": "media/pick/fox/134.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O03\\f0063.png"
+},
+{
+"src": "media/pick/fox/135.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O03\\f0108.png"
+},
+{
+"src": "media/pick/fox/136.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O04\\f0033.png"
+},
+{
+"src": "media/pick/fox/137.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O04\\f0078.png"
+},
+{
+"src": "media/pick/fox/138.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O05\\f0003.png"
+},
+{
+"src": "media/pick/fox/139.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O05\\f0048.png"
+},
+{
+"src": "media/pick/fox/140.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O05\\f0093.png"
+},
+{
+"src": "media/pick/fox/141.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O06\\f0018.png"
+},
+{
+"src": "media/pick/fox/142.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O06\\f0063.png"
+},
+{
+"src": "media/pick/fox/143.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O06\\f0108.png"
+},
+{
+"src": "media/pick/fox/144.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O07\\f0033.png"
+},
+{
+"src": "media/pick/fox/145.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O07\\f0078.png"
+},
+{
+"src": "media/pick/fox/146.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O08\\f0003.png"
+},
+{
+"src": "media/pick/fox/147.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O08\\f0048.png"
+},
+{
+"src": "media/pick/fox/148.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O08\\f0093.png"
+},
+{
+"src": "media/pick/fox/149.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O09\\f0018.png"
+},
+{
+"src": "media/pick/fox/150.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O09\\f0063.png"
+},
+{
+"src": "media/pick/fox/151.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O09\\f0108.png"
+},
+{
+"src": "media/pick/fox/152.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O10\\f0033.png"
+},
+{
+"src": "media/pick/fox/153.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O10\\f0078.png"
+},
+{
+"src": "media/pick/fox/154.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O11\\f0003.png"
+},
+{
+"src": "media/pick/fox/155.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O11\\f0048.png"
+},
+{
+"src": "media/pick/fox/156.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O11\\f0093.png"
+},
+{
+"src": "media/pick/fox/157.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O12\\f0018.png"
+},
+{
+"src": "media/pick/fox/158.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O12\\f0063.png"
+},
+{
+"src": "media/pick/fox/159.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O12\\f0108.png"
+},
+{
+"src": "media/pick/fox/160.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O13\\f0033.png"
+},
+{
+"src": "media/pick/fox/161.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O13\\f0078.png"
+},
+{
+"src": "media/pick/fox/162.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O14\\f0003.png"
+},
+{
+"src": "media/pick/fox/163.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O14\\f0048.png"
+},
+{
+"src": "media/pick/fox/164.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O14\\f0093.png"
+},
+{
+"src": "media/pick/fox/165.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O15\\f0018.png"
+},
+{
+"src": "media/pick/fox/166.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O15\\f0063.png"
+},
+{
+"src": "media/pick/fox/167.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O15\\f0108.png"
+},
+{
+"src": "media/pick/fox/168.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O16\\f0033.png"
+},
+{
+"src": "media/pick/fox/169.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O16\\f0078.png"
+},
+{
+"src": "media/pick/fox/170.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O17\\f0003.png"
+},
+{
+"src": "media/pick/fox/171.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O17\\f0048.png"
+},
+{
+"src": "media/pick/fox/172.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O17\\f0093.png"
+},
+{
+"src": "media/pick/fox/173.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O18\\f0018.png"
+},
+{
+"src": "media/pick/fox/174.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O18\\f0063.png"
+},
+{
+"src": "media/pick/fox/175.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O18\\f0108.png"
+},
+{
+"src": "media/pick/fox/176.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O19\\f0033.png"
+},
+{
+"src": "media/pick/fox/177.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O19\\f0078.png"
+},
+{
+"src": "media/pick/fox/178.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O20\\f0003.png"
+},
+{
+"src": "media/pick/fox/179.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O20\\f0048.png"
+},
+{
+"src": "media/pick/fox/180.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O20\\f0093.png"
+},
+{
+"src": "media/pick/fox/181.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O21\\f0018.png"
+},
+{
+"src": "media/pick/fox/182.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O21\\f0063.png"
+},
+{
+"src": "media/pick/fox/183.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O21\\f0108.png"
+},
+{
+"src": "media/pick/fox/184.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O22\\f0033.png"
+},
+{
+"src": "media/pick/fox/185.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O22\\f0078.png"
+},
+{
+"src": "media/pick/fox/186.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O23\\f0003.png"
+},
+{
+"src": "media/pick/fox/187.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O23\\f0048.png"
+},
+{
+"src": "media/pick/fox/188.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O23\\f0093.png"
+},
+{
+"src": "media/pick/fox/189.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O24\\f0018.png"
+},
+{
+"src": "media/pick/fox/190.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O24\\f0063.png"
+},
+{
+"src": "media/pick/fox/191.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O24\\f0108.png"
+},
+{
+"src": "media/pick/fox/192.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O26\\f0003.png"
+},
+{
+"src": "media/pick/fox/193.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O26\\f0048.png"
+},
+{
+"src": "media/pick/fox/194.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O26\\f0093.png"
+},
+{
+"src": "media/pick/fox/195.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O26\\f0138.png"
+},
+{
+"src": "media/pick/fox/196.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O27\\f0039.png"
+},
+{
+"src": "media/pick/fox/197.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O27\\f0084.png"
+},
+{
+"src": "media/pick/fox/198.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O27\\f0129.png"
+},
+{
+"src": "media/pick/fox/199.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O28\\f0030.png"
+},
+{
+"src": "media/pick/fox/200.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O28\\f0075.png"
+},
+{
+"src": "media/pick/fox/201.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O29\\f0000.png"
+},
+{
+"src": "media/pick/fox/202.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O29\\f0045.png"
+},
+{
+"src": "media/pick/fox/203.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O29\\f0090.png"
+},
+{
+"src": "media/pick/fox/204.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\O29\\f0135.png"
+},
+{
+"src": "media/pick/fox/205.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\R01\\f0036.png"
+},
+{
+"src": "media/pick/fox/206.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\R01\\f0081.png"
+},
+{
+"src": "media/pick/fox/207.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\R01\\f0126.png"
+},
+{
+"src": "media/pick/fox/208.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\R02\\f0027.png"
+},
+{
+"src": "media/pick/fox/209.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\R02\\f0072.png"
+},
+{
+"src": "media/pick/fox/210.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\R02\\f0117.png"
+},
+{
+"src": "media/pick/fox/211.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\R03\\f0018.png"
+},
+{
+"src": "media/pick/fox/212.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\R03\\f0063.png"
+},
+{
+"src": "media/pick/fox/213.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\R04\\f0012.png"
+},
+{
+"src": "media/pick/fox/214.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\R04\\f0057.png"
+},
+{
+"src": "media/pick/fox/215.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\R05\\f0006.png"
+},
+{
+"src": "media/pick/fox/216.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\R05\\f0051.png"
+},
+{
+"src": "media/pick/fox/217.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\R05\\f0096.png"
+},
+{
+"src": "media/pick/fox/218.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\R05\\f0141.png"
+},
+{
+"src": "media/pick/fox/219.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\R06\\f0042.png"
+},
+{
+"src": "media/pick/fox/220.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\R07\\f0012.png"
+},
+{
+"src": "media/pick/fox/221.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\R07\\f0057.png"
+},
+{
+"src": "media/pick/fox/222.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\R07\\f0102.png"
+},
+{
+"src": "media/pick/fox/223.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\R08\\f0027.png"
+},
+{
+"src": "media/pick/fox/224.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\R08\\f0072.png"
+},
+{
+"src": "media/pick/fox/225.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\R10\\f0030.png"
+},
+{
+"src": "media/pick/fox/226.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\R10\\f0120.png"
+},
+{
+"src": "media/pick/fox/227.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\R11\\f0021.png"
+},
+{
+"src": "media/pick/fox/228.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\R11\\f0066.png"
+},
+{
+"src": "media/pick/fox/229.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\R11\\f0111.png"
+},
+{
+"src": "media/pick/fox/230.jpg",
+"orig": "C:\\Users\\Fabrizio\\Projects\\demo-no-fox-season-varianti\\foto\\riprese\\X02\\f0012.png"
+}
+]
+}

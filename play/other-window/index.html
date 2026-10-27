@@ -1,0 +1,108 @@
+<!doctype html><html lang="en"><head>
+<meta name="robots" content="noindex, nofollow"><meta charset="utf-8"><meta name="viewport" content="width=1040">
+<title>One More Window - web toy</title>
+<style>
+html,body{margin:0;height:100%;overflow:hidden;background:#12141c;font-family:ui-monospace,Consolas,monospace;color:#f3e7d3;user-select:none}
+.win{position:absolute;width:486px;border:3px solid #5a3a24;background:#5a3a24;box-shadow:6px 6px 0 rgba(0,0,0,.5);touch-action:none}
+.win .t{display:flex;align-items:center;gap:6px;height:22px;padding:0 6px;font:700 11px ui-monospace,Consolas,monospace;letter-spacing:.08em;cursor:grab;background:#b07a4a;color:#fff6e4}
+.win.dark{border-color:#2a2d52}.win.dark .t{background:#363a6e}
+.win .t i{margin-left:auto;font-style:normal;background:#d1473f;padding:0 6px;cursor:pointer}
+canvas{display:block;width:480px;height:360px;image-rendering:pixelated;background:#000}
+#hud{position:fixed;left:12px;bottom:12px;right:12px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;z-index:50;pointer-events:none}
+#hud>*{pointer-events:auto}
+.b{font:700 12px ui-monospace,Consolas,monospace;background:#ffe08a;color:#2b2540;border:2px solid #2b2540;border-radius:99px;padding:7px 13px;cursor:pointer;box-shadow:3px 3px 0 #2b2540}
+#msg{background:rgba(0,0,0,.55);padding:7px 12px;border-radius:8px;font-size:12px;flex:1;min-width:200px}
+#pop{position:fixed;top:12px;left:12px;font-size:11px;opacity:.75}
+.k{display:inline-block;min-width:22px;text-align:center;padding:3px 6px;margin:0 2px;border:2px solid #f3e7d3;border-bottom-width:4px;border-radius:6px;font-weight:700;background:#262a3c}
+#dlg{position:fixed;left:50%;bottom:64px;transform:translateX(-50%);width:min(640px,92vw);background:#1b1d2b;border:3px solid #ffe08a;border-radius:12px;padding:12px 16px;font-size:15px;line-height:1.45;z-index:60;box-shadow:5px 5px 0 rgba(0,0,0,.5);opacity:0;pointer-events:none;transition:opacity .25s}
+#dlg.on{opacity:1}#dlg b{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#ffb59e;margin-bottom:3px}#dlg b.echo{color:#8fb7ff}
+
+</style></head><body>
+<div id="pop">Drag the windows by their title bars. Slide one over the other: she can only walk across where they overlap.</div>
+<div class="win" id="wa" style="left:40px;top:70px"><div class="t">ONE MORE WINDOW<i id="xa">x</i></div><canvas id="ca" width="320" height="240"></canvas></div>
+<div class="win dark" id="wb" style="left:520px;top:150px"><div class="t">ONE MORE WINDOW</div><canvas id="cb" width="320" height="240"></canvas></div>
+<div id="dlg"></div><div id="hud"><button class="b" id="snd">SOUND: ON</button><button class="b" id="real">OPEN A REAL 2ND BROWSER WINDOW</button><div id="msg"><span class="k">A</span><span class="k">D</span> or <span class="k">&larr;</span><span class="k">&rarr;</span> walk &nbsp;&middot;&nbsp; <b>CLICK</b> anywhere in her room: she walks there &nbsp;&middot;&nbsp; drag the title bars, overlap the windows</div></div>
+<script>
+const $=id=>document.getElementById(id);
+const role=new URLSearchParams(location.search).get('role');
+const bc=('BroadcastChannel' in window)?new BroadcastChannel('omw-demo'):null;
+let sound=true,ac=null;
+function actx(){try{ac=ac||new (window.AudioContext||window.webkitAudioContext)();if(ac.state==='suspended')ac.resume()}catch(e){}return ac}
+['pointerdown','keydown','touchend','click'].forEach(ev=>addEventListener(ev,actx,{capture:true,passive:true}));
+function beep(f,d){if(!sound||!ac)return;if(ac.state==='suspended'){ac.resume();return}try{const o=ac.createOscillator(),g=ac.createGain();o.type='square';o.frequency.value=f;g.gain.value=.04;o.connect(g);g.connect(ac.destination);o.start();o.stop(ac.currentTime+d)}catch(e){}}
+const sb=$('snd');if(sb)sb.onclick=()=>{sound=!sound;sb.textContent='SOUND: '+(sound?'ON':'OFF');if(sound){actx();beep(440,.1)}};
+const W=320,H=240,FLOOR=221;const IM={};["room_A","room_B","tilde","echo"].forEach(n=>{const i=new Image();i.src="art/"+n+".png";IM[n]=i});
+let dir=1,walk=0;
+let dtimer=null,dhide=null;
+function say(t){const d=$('dlg');if(d){const i=t.indexOf(': ');let who='Narrator',tx=t;if(i>0&&i<12){who=t.slice(0,i);tx=t.slice(i+2)}
+ d.innerHTML='<b class="'+who.toLowerCase()+'">'+who+'</b><span></span>';d.className='on';const sp=d.querySelector('span');let n=0;clearInterval(dtimer);clearTimeout(dhide);
+ dtimer=setInterval(()=>{n+=2;sp.textContent=tx.slice(0,n);if(n>=tx.length){clearInterval(dtimer);dhide=setTimeout(()=>{d.className=''},5500)}},24)}
+ beep(520,.05);setTimeout(()=>beep(660,.05),70)}
+const keys={};window.focus();addEventListener('pointerdown',()=>window.focus());
+addEventListener('keydown',e=>{const k=e.key.toLowerCase();if(['w','a','s','d',' ','arrowup','arrowdown','arrowleft','arrowright'].indexOf(k)>=0)e.preventDefault();keys[k]=1;if(role==='B'&&bc)bc.postMessage({k:'key',key:k,v:1})},{passive:false});
+addEventListener('keyup',e=>{const k=e.key.toLowerCase();keys[k]=0;if(role==='B'&&bc)bc.postMessage({k:'key',key:k,v:0})});
+function rect(c,x,y,w,h,col){c.fillStyle=col;c.fillRect(x|0,y|0,w|0,h|0)}
+function drawRoomA(c){c.drawImage(IM.room_A,0,0)}
+function drawRoomB(c,t){c.drawImage(IM.room_B,0,0);const g=(Math.sin(t/600)*1.5)|0;frame(c,IM.echo,(t/500|0)%2,232,g,-1)}
+function frame(c,img,f,px,dy,flip){const y=FLOOR-28+dy;c.save();c.translate(px|0,0);if(flip<0)c.scale(-1,1);c.drawImage(img,f*20,0,20,28,-10,y,20,28);c.restore()}
+function drawTilde(c,px,t,dy,d,w){const f=w?2+((t/125|0)%4):((t/700|0)%4===3?1:0);frame(c,IM.tilde,f,px,dy||0,d)}
+function screenRect(el){const r=el.getBoundingClientRect();const ox=window.screenX+(window.outerWidth-window.innerWidth)/2,oy=window.screenY+(window.outerHeight-window.innerHeight);return{l:ox+r.left,t:oy+r.top,r:ox+r.right,b:oy+r.bottom}}
+function cr(el){const r=screenRect(el);r.s=(r.r-r.l)/W;return r}
+const floorY=c=>c.t+FLOOR*c.s;
+function sxOf(clientX){return window.screenX+(window.outerWidth-window.innerWidth)/2+clientX}
+
+if(role==='B'){
+ document.body.innerHTML='<div class="win dark" id="wb" style="left:0;top:0;width:auto;box-shadow:none;border:0"><div class="t">ONE MORE WINDOW (2)</div><canvas id="cb" width="320" height="240" style="width:100%;height:auto"></canvas></div><div style="position:fixed;bottom:6px;left:8px;font-size:11px;opacity:.7">Slide this window over the other one: she walks across where they overlap. A / D to walk.</div>';
+ const cb=document.getElementById('cb'),cc=cb.getContext('2d');let P=null;
+ cb.addEventListener('pointerdown',e=>{if(bc)bc.postMessage({k:'go',sx:sxOf(e.clientX)})});
+ bc.onmessage=e=>{if(e.data.k==='pos')P=e.data};
+ setInterval(()=>bc.postMessage({k:'rect',r:cr(cb)}),80);
+ (function f(now){drawRoomB(cc,now);
+  if(P){const c=cr(cb),lx=(P.sx-c.l)/c.s,ly=FLOOR+(P.fy-floorY(c))/c.s;if(lx>-14&&lx<W+14)drawTilde(cc,lx,now,ly-FLOOR,P.dir,P.walk)}
+  requestAnimationFrame(f)})(performance.now());
+} else {
+ let zTop=10;
+ document.querySelectorAll('.win').forEach(w=>{const t=w.querySelector('.t');let d=null;
+  t.addEventListener('pointerdown',e=>{w.style.zIndex=++zTop;if(e.target.tagName==='I')return;d={x:e.clientX-w.offsetLeft,y:e.clientY-w.offsetTop};t.setPointerCapture(e.pointerId);t.style.cursor='grabbing'});
+  t.addEventListener('pointermove',e=>{if(!d)return;w.style.left=Math.max(0,Math.min(innerWidth-w.offsetWidth,e.clientX-d.x))+'px';w.style.top=Math.max(0,Math.min(innerHeight-w.offsetHeight-50,e.clientY-d.y))+'px'});
+  t.addEventListener('pointerup',()=>{d=null;t.style.cursor='grab'})});
+ $('xa').onclick=()=>say('A window cannot close the room it is in. Try sliding them over each other.');
+ let tgt=null,popupOpen=false,remote=null,home='A',xl=60,dyOff=0,sendT=0;
+ [['ca','A'],['cb','B']].forEach(([id])=>$(id).addEventListener('pointerdown',e=>{tgt=sxOf(e.clientX)}));
+ $('real').onclick=()=>{const p=window.open(location.pathname+'?role=B','omw2','width=380,height=330');
+  if(!p){say('The browser blocked the popup. Allow popups for this page and press again.');return}
+  popupOpen=true;remote=null;say('A real second window. Slide it over this one: she walks across where they overlap.');
+  const iv=setInterval(()=>{if(p.closed){clearInterval(iv);popupOpen=false;remote=null;if(home==='B'){home='A';xl=W-40}say('The other window closed.')}},500)};
+ if(bc)bc.onmessage=e=>{const m=e.data;if(m.k==='rect')remote=m.r;if(m.k==='key')keys[m.key]=m.v;if(m.k==='go')tgt=m.sx};
+ const ca=$('ca').getContext('2d'),cb=$('cb').getContext('2d');
+ const inside=(c,sx,fy)=>c&&sx>=c.l+4*c.s&&sx<=c.r-4*c.s&&fy>=c.t+.4*(c.b-c.t)&&fy<=c.b+2;
+ let last=performance.now(),wasOv=false;
+ (function loop(now){const dt=Math.min(.05,(now-last)/1000);last=now;
+  $('wb').style.display=popupOpen?'none':'';
+  const cA=cr($('ca')),cB=popupOpen?remote:cr($('cb')),cs={A:cA,B:cB};
+  if(!cs[home]){home='A';xl=W-40}
+  const hc=cs[home],oid=home==='A'?'B':'A',oc=cs[oid];
+  dyOff=Math.abs(dyOff)<1?0:dyOff-Math.sign(dyOff)*Math.min(Math.abs(dyOff),160*dt);
+  let fy=floorY(hc)+dyOff,sx=hc.l+xl*hc.s;
+  let mv=(keys['d']||keys['arrowright']?1:0)-(keys['a']||keys['arrowleft']?1:0);
+  if(mv)tgt=null;else if(tgt!=null){const d=tgt-sx;if(Math.abs(d)<3)tgt=null;else mv=d>0?1:-1}
+  walk=0;
+  if(mv){const cand=xl+mv*70*dt,csx=hc.l+cand*hc.s;
+   const inHome=cand>=4&&cand<=W-4;
+   if(inHome||inside(oc,csx,fy)){xl=cand;dir=mv;walk=1}else tgt=null}
+  sx=hc.l+xl*hc.s;
+  if(!(xl>=4&&xl<=W-4)){ if(inside(oc,sx,fy)){home=oid;dyOff=fy-floorY(oc);xl=(sx-oc.l)/oc.s} else {xl=Math.max(4,Math.min(W-4,xl))} }
+  const h2=cs[home];sx=h2.l+xl*h2.s;fy=floorY(h2)+dyOff;
+  // overlap state (dialogue only: nobody is teleported any more)
+  const ov=cB&&Math.min(cA.r,cB.r)-Math.max(cA.l,cB.l)>24&&Math.min(cA.b,cB.b)-Math.max(cA.t,cB.t)>60;
+  if(ov&&!wasOv)say('The windows overlap. Walk into the overlap: she steps out of one room and into the other.');
+  if(!ov&&wasOv)say('The windows no longer overlap. Without a shared floor she stays in her own room.');
+  wasOv=ov;
+  [['A',ca],['B',cb]].forEach(([id,cx])=>{if(id==='B'&&popupOpen)return;const c=cs[id];id==='A'?drawRoomA(cx):drawRoomB(cx,now);
+   const lx=(sx-c.l)/c.s,ly=FLOOR+(fy-floorY(c))/c.s;if(lx>-14&&lx<W+14)drawTilde(cx,lx,now,ly-FLOOR,dir,walk)});
+  if(tgt!=null){const c=cs[home];rect(home==='A'?ca:cb,(tgt-c.l)/c.s-3,FLOOR+2,6,2,'#ffe08a')}
+  if(popupOpen&&bc&&now-sendT>30){sendT=now;bc.postMessage({k:'pos',sx,fy,dir,walk})}
+  requestAnimationFrame(loop)})(last);
+ [[600,'Tilde: Two windows. One girl. This small room is all I have.'],[6200,"Echo: ...I am in the room next door. Slide your window over mine and walk through."],[12200,'Tilde: Press A and D, or just click where I should walk. Windows that only touch are not enough.']].forEach(([t,m])=>setTimeout(()=>say(m),t));
+}
+</script></body></html>

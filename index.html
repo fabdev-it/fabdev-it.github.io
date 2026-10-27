@@ -1,198 +1,479 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex, nofollow">
-<title>Fabrizio Amenta — Programmer</title>
-<meta name="description" content="Programmer and game designer based in Naples, Italy. Ren'Py, Python, Unity. Available for remote work.">
-<link rel="alternate" hreflang="en" href="https://fabdev-it.github.io/">
-<link rel="alternate" hreflang="it" href="https://fabdev-it.github.io/it/">
-<link rel="stylesheet" href="/style.css">
-</head>
-<body>
+<!doctype html>
+<html lang="en"><head>
+<meta name="robots" content="noindex, nofollow"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fabrizio Amenta - Game programmer and designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#fbf5ec; --ink:#2b2540; --soft:#6b6385;
+  --peach:#ffb59e; --mint:#a9dcc9; --lilac:#cbb6ff; --butter:#ffe08a; --sky:#a8d4ff;
+  --card:#ffffff; --line:#eadfce;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3,.f{font-family:Fredoka,system-ui,sans-serif}
+a{color:inherit}
 
-<div class="page">
+/* nav */
+nav{position:fixed;top:16px;left:50%;transform:translateX(-50%);z-index:20;display:flex;gap:6px;
+  background:rgba(255,255,255,.75);backdrop-filter:blur(10px);padding:6px;border-radius:999px;
+  box-shadow:0 6px 24px rgba(43,37,64,.08);border:1px solid var(--line)}
+nav a{text-decoration:none;font-weight:700;font-size:14px;padding:9px 16px;border-radius:999px;transition:.2s}
+nav a:hover{background:var(--butter)}
 
-  <header class="masthead">
-    <nav class="langs label" aria-label="Language">
-      <span class="current">English</span>
-      <a href="/it/" hreflang="it" lang="it">Italiano</a>
-    </nav>
+/* hero */
+#hero{position:relative;height:100vh;min-height:620px}
+#scene{position:absolute;inset:0;width:100%;height:100%;display:block}
+.hero-txt{position:absolute;left:6vw;bottom:12vh;max-width:560px;pointer-events:none}
+.tag{display:inline-block;background:var(--card);border:2px solid var(--ink);border-radius:999px;
+  padding:6px 14px;font-weight:700;font-size:13px;margin-bottom:18px;box-shadow:3px 3px 0 var(--ink)}
+.hero-txt h1{font-size:clamp(44px,7.5vw,104px);line-height:.92;letter-spacing:-.02em}
+.hero-txt h1 span{color:#ff7f5c}
+.hero-txt p{font-size:clamp(16px,1.6vw,20px);color:var(--soft);margin-top:18px;max-width:420px}
+.scroll-hint{position:absolute;right:6vw;bottom:12vh;font-weight:700;font-size:13px;color:var(--soft);
+  writing-mode:vertical-rl;letter-spacing:.2em;animation:bob 2s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(8px)}}
 
-    <h1 class="name">Fabrizio Amenta</h1>
-    <p class="role">Programmer and game designer / Naples, Italy</p>
+section{padding:120px 6vw;position:relative}
+.kicker{font-weight:700;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#ff7f5c;margin-bottom:12px}
+h2{font-size:clamp(36px,5vw,64px);line-height:1;letter-spacing:-.01em;margin-bottom:40px}
 
-    <dl class="facts">
-      <dt class="label">Based in</dt>
-      <dd>Naples, Italy — EU</dd>
+/* about */
+.about{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.blob{background:var(--card);border:2px solid var(--ink);border-radius:28px;padding:28px;box-shadow:6px 6px 0 var(--ink);
+  transition:transform .25s}
+.blob:hover{transform:translate(-3px,-3px) rotate(-.6deg);box-shadow:9px 9px 0 var(--ink)}
+.blob h3{font-size:22px;margin-bottom:10px}
+.blob p{color:var(--soft);line-height:1.55}
+.blob .ico{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;font-size:26px;margin-bottom:16px;border:2px solid var(--ink)}
 
-      <dt class="label">Working</dt>
-      <dd>Remote</dd>
+/* skills scanner */
+#skills{background:var(--ink);color:var(--cream);border-radius:48px;margin:0 2vw}
+#skills .kicker{color:var(--butter)}
+.scanner{position:relative;overflow:hidden;border-radius:28px;border:2px solid rgba(255,255,255,.15);padding:40px 28px;
+  background:repeating-linear-gradient(0deg,rgba(255,255,255,.03) 0 2px,transparent 2px 6px)}
+.chips{display:flex;flex-wrap:wrap;gap:14px;position:relative;z-index:1}
+.chip{font-family:Fredoka;font-weight:600;font-size:clamp(18px,2.2vw,30px);padding:12px 22px;border-radius:999px;
+  border:2px solid rgba(255,255,255,.25);color:rgba(251,245,236,.35);transition:all .35s}
+.chip small{font-family:"DM Sans";font-size:12px;font-weight:700;margin-left:8px;opacity:.8}
+.chip.on{color:var(--ink);border-color:transparent;transform:scale(1.04)}
+.beam{position:absolute;top:0;bottom:0;width:120px;left:-140px;z-index:2;pointer-events:none;
+  background:linear-gradient(90deg,transparent,rgba(169,220,201,.25),rgba(169,220,201,.9) 92%,#fff);
+  mix-blend-mode:screen}
+.scan-legend{display:flex;gap:18px;margin-top:22px;font-size:13px;color:rgba(251,245,236,.6);flex-wrap:wrap}
+.scan-legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px}
 
-      <dt class="label">Languages</dt>
-      <dd>Italian (native) · English</dd>
+/* games carousel */
+.games-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap}
+.arrows button{width:54px;height:54px;border-radius:50%;border:2px solid var(--ink);background:var(--card);font-size:22px;
+  cursor:pointer;box-shadow:3px 3px 0 var(--ink);margin-left:8px;transition:.15s}
+.arrows button:active{transform:translate(3px,3px);box-shadow:none}
+.track{display:flex;gap:28px;overflow-x:auto;scroll-snap-type:x mandatory;padding:20px 6vw 50px;margin:0 -6vw;
+  scrollbar-width:none;cursor:grab;perspective:1200px}
+.track::-webkit-scrollbar{display:none}
+.game{flex:0 0 min(360px,80vw);scroll-snap-align:center;background:var(--card);border:2px solid var(--ink);border-radius:30px;
+  overflow:hidden;box-shadow:8px 8px 0 var(--ink);transition:transform .2s ease-out;transform-style:preserve-3d}
+.game .pic{aspect-ratio:16/10;background-size:cover;background-position:center;border-bottom:2px solid var(--ink);position:relative}
+.game .pic::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(43,37,64,.35))}
+.game .body{padding:22px}
+.game h3{font-size:26px;margin-bottom:6px}
+.game p{color:var(--soft);font-size:15px;line-height:1.5;min-height:46px}
+.game .row{display:flex;justify-content:space-between;align-items:center;margin-top:18px}
+.pill{font-size:12px;font-weight:700;padding:5px 11px;border-radius:999px;border:1.5px solid var(--ink)}
+.play{font-family:Fredoka;font-weight:600;font-size:17px;border:2px solid var(--ink);border-radius:999px;padding:10px 20px;
+  cursor:pointer;box-shadow:3px 3px 0 var(--ink);transition:.15s}
+.play:hover{transform:translate(-2px,-2px);box-shadow:5px 5px 0 var(--ink)}
 
-      <dt class="label">Status</dt>
-      <dd>Open to work</dd>
-    </dl>
-  </header>
+/* experience */
+.tl{position:relative;max-width:860px}
+.tl::before{content:"";position:absolute;left:11px;top:6px;bottom:6px;width:3px;background:var(--line);border-radius:3px}
+.item{position:relative;padding:0 0 38px 48px}
+.item::before{content:"";position:absolute;left:0;top:4px;width:25px;height:25px;border-radius:50%;border:3px solid var(--ink);background:var(--c,var(--peach))}
+.item .when{font-weight:700;font-size:13px;color:var(--soft);letter-spacing:.05em}
+.item h3{font-size:24px;margin:4px 0}
+.item p{color:var(--soft);line-height:1.55}
 
-  <section>
-    <div class="head">
-      <h2>Get in touch</h2>
-      <span class="label">Contact</span>
-    </div>
+/* contact */
+#contatti{text-align:center;padding-bottom:160px}
+.big-mail{display:inline-block;font-family:Fredoka;font-weight:700;font-size:clamp(28px,5vw,64px);text-decoration:none;
+  background:var(--butter);border:3px solid var(--ink);border-radius:999px;padding:18px 40px;box-shadow:8px 8px 0 var(--ink);transition:.2s}
+.big-mail:hover{transform:translate(-4px,-4px) rotate(-1deg);box-shadow:12px 12px 0 var(--ink)}
+.facts{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:36px}
+.facts span{background:var(--card);border:2px solid var(--ink);border-radius:999px;padding:8px 16px;font-weight:700;font-size:14px}
+footer{text-align:center;padding:30px;color:var(--soft);font-size:13px}
 
-    <div class="rows">
-      <a class="row" href="mailto:fabwork987@gmail.com">
-        <span class="rtitle">Email</span>
-        <span class="rmeta">Write</span>
-        <p class="rdesc">fabwork987@gmail.com</p>
-      </a>
+/* player modal */
+#player{position:fixed;inset:0;z-index:50;background:rgba(43,37,64,.75);backdrop-filter:blur(6px);display:none;
+  align-items:center;justify-content:center;padding:20px}
+#player.open{display:flex}
+.frame{width:min(1200px,100%);background:var(--cream);border:3px solid var(--ink);border-radius:28px;overflow:hidden;
+  box-shadow:10px 10px 0 var(--ink);animation:pop .35s cubic-bezier(.3,1.5,.5,1)}
+@keyframes pop{from{transform:scale(.85);opacity:0}}
+.frame-top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 18px;border-bottom:3px solid var(--ink)}
+.frame-top h3{font-size:22px}
+.frame-top small{color:var(--soft);display:block;font-size:13px}
+.frame-top button{border:2px solid var(--ink);background:var(--peach);border-radius:999px;width:42px;height:42px;font-size:18px;cursor:pointer;flex:none}
+#gameframe{display:block;width:100%;aspect-ratio:16/9;max-height:calc(100vh - 160px);border:0;background:#111}
 
-    </div>
-  </section>
+.reveal{opacity:0;transform:translateY(40px);transition:opacity .8s,transform .8s cubic-bezier(.2,.8,.2,1)}
+.reveal.in{opacity:1;transform:none}
 
-  <section>
-    <div class="head">
-      <h2>What I work with</h2>
-      <span class="label">Skills</span>
-    </div>
+@media (max-width:640px){
+  nav a{padding:8px 10px;font-size:13px}
+  section{padding:90px 16px}
+  .hero-txt{left:16px;right:16px;bottom:9vh}
+  .scroll-hint{display:none}
+  #skills{margin:0}
+}
 
-    <div class="stack">
-      <div class="strand">
-        <span class="label">Programming</span>
-        <p>I know the basics of Python programming, from hands-on experience
-        building a game in Ren'Py.</p>
-      </div>
-      <div class="strand">
-        <span class="label">Engines</span>
-        <p>Ren'Py — a game in progress · Unity — for a game in progress
-        focused on cutscenes, animation, etc.</p>
-      </div>
-      <div class="strand">
-        <span class="label">Design</span>
-        <p>Game design · mechanics and dynamics · level design</p>
-      </div>
-      <div class="strand">
-        <span class="label">Tools</span>
-        <p>Git and GitHub — day-to-day version control ·
-        AI-assisted development with Claude Code, Cursor and Windsurf</p>
-      </div>
-      <div class="strand">
-        <span class="label">Learning now</span>
-        <p>Web development — HTML, CSS and JavaScript, and how a front end talks to
-        a back end and a database</p>
-      </div>
-    </div>
-  </section>
+#phow{font:500 13px/1.45 "DM Sans",sans-serif;max-width:900px;margin-top:6px;opacity:.9}#phow:empty{display:none}#phow b{font-family:Fredoka,sans-serif}
+#hero{display:grid;grid-template-columns:minmax(300px,1.05fr) 1fr;height:100vh;min-height:640px;background:var(--ink);color:var(--cream);overflow:hidden;border-bottom:3px solid var(--ink)}
+.hero-l{padding:120px 4vw 6vh 6vw;display:flex;flex-direction:column;justify-content:flex-end;position:relative;z-index:2}
+.idx{font:700 12px/1.4 "DM Sans";letter-spacing:.16em;text-transform:uppercase;color:var(--butter);margin-bottom:22px}
+#hero h1{font-size:clamp(54px,9vw,138px);line-height:.88;letter-spacing:-.035em;font-weight:700}
+#hero p{max-width:380px;margin-top:26px;color:rgba(251,245,236,.7);line-height:1.55;font-size:17px}
+.hlist{list-style:none;margin-top:34px;border-top:1px solid rgba(251,245,236,.25)}
+.hlist li{border-bottom:1px solid rgba(251,245,236,.25)}
+.hlist a{display:block;padding:11px 0;text-decoration:none;font-weight:500;transition:.2s}
+.hlist a b{display:inline-block;width:38px;color:var(--peach);font-size:13px}
+.hlist a:hover{padding-left:12px;color:var(--butter)}
+.hero-r{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;padding:14px 14px 14px 0;overflow:hidden}
+.mcol{overflow:hidden;position:relative}
+.mtrack{display:flex;flex-direction:column;gap:14px;animation:mq 46s linear infinite}
+.mcol.down .mtrack{animation-direction:reverse;animation-duration:58s}.mcol.up2 .mtrack{animation-duration:52s}
+.mtrack video{cursor:pointer;width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:14px;background:#111;display:block}
+@keyframes mq{to{transform:translateY(calc(-50% - 7px))}}
+.scroll-hint{color:rgba(251,245,236,.6)!important;right:auto;left:calc(50% - 8px);z-index:3}
+@media (max-width:760px){#hero{grid-template-columns:1fr;grid-template-rows:auto 1fr}.hero-l{padding-top:90px}.hero-r{padding:0 14px 14px}}
+@media (prefers-reduced-motion:reduce){.mtrack{animation:none}}
 
-  <section>
-    <div class="head">
-      <h2>Interactive design work</h2>
-      <span class="label">Experience</span>
-    </div>
+.kicker{display:flex;gap:10px;align-items:center}
+.lede{max-width:640px;color:var(--soft);font-size:18px;line-height:1.55;margin:-20px 0 40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:26px}
+.card{background:var(--card);border:2px solid var(--ink);border-radius:26px;overflow:hidden;box-shadow:6px 6px 0 var(--ink);
+  transition:transform .2s,box-shadow .2s;cursor:pointer;display:flex;flex-direction:column}
+.card:hover{transform:translate(-3px,-3px);box-shadow:9px 9px 0 var(--ink)}
+.card .pic{aspect-ratio:16/10;background-size:cover;background-position:center;border-bottom:2px solid var(--ink);position:relative;background-color:#111}
+.card .pic::after{content:"\25B6";position:absolute;right:12px;bottom:12px;width:42px;height:42px;border-radius:50%;background:var(--butter);
+  border:2px solid var(--ink);display:grid;place-items:center;font-size:14px;padding-left:3px;color:var(--ink);transition:.2s}
+.card:hover .pic::after{transform:scale(1.15) rotate(-6deg)}
+.card.img .pic::after{content:"+";padding:0;font-size:22px;font-weight:700}
+.card .body{padding:18px 20px 22px;flex:1}
+.card h3{font-size:22px;margin-bottom:6px}
+.card p{color:var(--soft);font-size:14.5px;line-height:1.5}
+.card .meta{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+#stories{background:#15101a;color:#f3e9e4;border-radius:48px;margin:0 2vw}
+#stories .kicker{color:#ff5b52} #stories .lede{color:#b9a9b0}
+#stories .card{background:#211822;border-color:#ff5b52;box-shadow:6px 6px 0 #ff5b52;color:#f3e9e4}
+#stories .card:hover{box-shadow:9px 9px 0 #ff5b52} #stories .card p{color:#b9a9b0}
+#stories .card .pic{border-color:#ff5b52} #stories .pill{border-color:#ff5b52;color:#f3e9e4;background:transparent!important}
+#prototypes{background:linear-gradient(180deg,transparent,rgba(203,182,255,.28) 12%,rgba(203,182,255,.28) 88%,transparent)}
+#tech{background:var(--ink);color:var(--cream);border-radius:48px;margin:0 2vw}
+#tech .kicker{color:var(--mint)} #tech .lede{color:rgba(251,245,236,.65)}
+#tech .card{background:#2f2950;border-color:var(--mint);box-shadow:6px 6px 0 var(--mint);color:var(--cream)}
+#tech .card:hover{box-shadow:9px 9px 0 var(--mint)} #tech .card p{color:rgba(251,245,236,.7)}
+#tech .card .pic{border-color:var(--mint)} #tech .pill{border-color:var(--mint);background:transparent!important;color:var(--cream)}
+.otherband{display:flex;gap:30px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:var(--butter);border:3px solid var(--ink);
+  border-radius:36px;padding:36px 40px;box-shadow:10px 10px 0 var(--ink)}
+.otherband h2{margin:0;font-size:clamp(28px,4vw,48px)}
+.otherband p{max-width:520px;color:#4a4350;margin-top:10px;line-height:1.5}
+.btn{display:inline-block;text-decoration:none;font-family:Fredoka;font-weight:600;font-size:19px;background:var(--card);border:2px solid var(--ink);
+  border-radius:999px;padding:14px 28px;box-shadow:4px 4px 0 var(--ink);transition:.15s}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}
+.gal{background:#fff;border:2px solid var(--ink);border-radius:26px;box-shadow:6px 6px 0 var(--ink);overflow:hidden;max-width:1000px}
+.gtabs{display:flex;gap:8px;padding:14px 16px;border-bottom:2px solid var(--ink);align-items:center;flex-wrap:wrap}
+.gtabs button{font:600 15px Fredoka;border:2px solid var(--ink);background:#fff;border-radius:99px;padding:6px 16px;cursor:pointer;color:var(--ink)}.gtabs button.on{background:var(--butter)}
+.gtabs span{margin-left:auto;font-size:13px;color:var(--soft)}
+.gstage{position:relative;background:#000;aspect-ratio:16/10}.gstage img{width:100%;height:100%;object-fit:contain;display:block}
+.gstage button{position:absolute;top:50%;transform:translateY(-50%);width:54px;height:54px;border-radius:50%;border:2px solid var(--ink);background:var(--card);font-size:22px;cursor:pointer;box-shadow:3px 3px 0 var(--ink)}
+#gprev{left:12px}#gnext{right:12px}
+#gallery{background:#0d0709;color:#f1e4d3;border-radius:48px;margin:0 2vw}#gallery .kicker{color:#ff5b52}#gallery .lede{color:#b9a3a0}
+.agrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px}
+.ac{margin:0;background:#000;border:2px solid #7a1c1c;border-radius:14px;overflow:hidden;box-shadow:5px 5px 0 #7a1c1c;cursor:zoom-in;transition:.2s}.ac:hover{transform:translate(-3px,-3px);box-shadow:8px 8px 0 #ff5b52;border-color:#ff5b52}
+.ac img{width:100%;aspect-ratio:16/10;object-fit:cover;display:block;image-rendering:pixelated}
+.ac figcaption{padding:8px 11px;font:600 13px/1.3 "DM Sans",sans-serif;letter-spacing:.04em;background:#1a0d0f;color:#f1e4d3;border-top:2px solid #7a1c1c}
+.note{font-size:12.5px;color:var(--soft);margin-top:14px}
+#lbbody video,#lbbody img{display:block;width:100%;max-height:calc(100vh - 150px);object-fit:contain;background:#000}
+#lbbody img{cursor:pointer}
+nav{max-width:96vw;overflow-x:auto;scrollbar-width:none}nav a{white-space:nowrap}
+@media (max-width:640px){#stories,#tech{margin:0}.otherband{padding:26px}}
+</style><style>@media(max-width:640px){nav,header nav,.nav{max-width:calc(100vw - 16px)!important;overflow-x:auto!important;white-space:nowrap;scrollbar-width:none}html,body{overflow-x:hidden}}</style>
+</head><body>
+<nav>
+  <a href="#hero">Hello</a><a href="#play">Play</a><a href="#stories">Stories</a><a href="#gallery">Gallery</a><a href="#prototypes">Prototypes</a><a href="#tech">Tech</a><a href="other-work.html">Other work</a><a href="#contact">Contact</a>
+</nav>
+<header id="hero"><div class="hero-l"><div class="idx">(Game programmer &amp; designer) &mdash; Naples / remote EU</div>
+<h1>Fabrizio<br>Amenta</h1>
+<p>I make small games and the levels inside them. The pictures on the right are all my own games and working prototypes, running live. Click any picture to open it.</p>
+<ol class="hlist"><li><a href="#play"><b>01</b> Play in the browser</a></li><li><a href="#stories"><b>02</b> Stories told by how they look</a></li><li><a href="#prototypes"><b>03</b> Prototypes, caught moving</a></li><li><a href="#contact"><b>04</b> Say hello</a></li></ol></div>
+<div class="hero-r"><div class="mcol up"><div class="mtrack"><video data-open="g:Banana Parry" src="media/banana.mp4" poster="media/banana.jpg" autoplay muted loop playsinline preload="none"></video><video data-open="c:scp-portraits" src="media/scp-portraits.mp4" poster="media/scp-portraits.jpg" autoplay muted loop playsinline preload="none"></video><video data-open="c:slime" src="media/slime.mp4" poster="media/slime.jpg" autoplay muted loop playsinline preload="none"></video><video data-open="g:Banana Parry" src="media/banana.mp4" poster="media/banana.jpg" autoplay muted loop playsinline preload="none"></video><video data-open="c:scp-portraits" src="media/scp-portraits.mp4" poster="media/scp-portraits.jpg" autoplay muted loop playsinline preload="none"></video><video data-open="c:slime" src="media/slime.mp4" poster="media/slime.jpg" autoplay muted loop playsinline preload="none"></video></div></div><div class="mcol down"><div class="mtrack"><video data-open="c:charcoal" src="media/charcoal.mp4" poster="media/charcoal.jpg" autoplay muted loop playsinline preload="none"></video><video data-open="g:One More Window" src="media/other-window.mp4" poster="media/other-window.jpg" autoplay muted loop playsinline preload="none"></video><video data-open="g:Rivela" src="media/rivela.mp4" poster="media/rivela.jpg" autoplay muted loop playsinline preload="none"></video><video data-open="c:charcoal" src="media/charcoal.mp4" poster="media/charcoal.jpg" autoplay muted loop playsinline preload="none"></video><video data-open="g:One More Window" src="media/other-window.mp4" poster="media/other-window.jpg" autoplay muted loop playsinline preload="none"></video><video data-open="g:Rivela" src="media/rivela.mp4" poster="media/rivela.jpg" autoplay muted loop playsinline preload="none"></video></div></div><div class="mcol up2"><div class="mtrack"><video data-open="g:SCIA" src="media/scia-teaser.mp4" poster="media/scia-teaser.jpg" autoplay muted loop playsinline preload="none"></video><video data-open="c:vn-panels" src="media/vn-panels.mp4" poster="media/vn-panels.jpg" autoplay muted loop playsinline preload="none"></video><video data-open="g:Expédissionne 34 - the ship" src="media/e34.mp4" poster="media/e34.jpg" autoplay muted loop playsinline preload="none"></video><video data-open="g:SCIA" src="media/scia-teaser.mp4" poster="media/scia-teaser.jpg" autoplay muted loop playsinline preload="none"></video><video data-open="c:vn-panels" src="media/vn-panels.mp4" poster="media/vn-panels.jpg" autoplay muted loop playsinline preload="none"></video><video data-open="g:Expédissionne 34 - the ship" src="media/e34.mp4" poster="media/e34.jpg" autoplay muted loop playsinline preload="none"></video></div></div></div><div class="scroll-hint">SCROLL</div></header>
 
-    <div class="jobs">
-      <article class="job">
-        <div class="jobhead">
-          <span class="jobrole">Independent Game Developer</span>
-          <span class="jobdate">present</span>
-        </div>
-        <span class="jobplace">Independent projects — Italy</span>
-        <p class="jobdesc">Design and development of independent game projects
-        (currently unreleased): concept, mechanics, level design, programming and
-        testing.</p>
-      </article>
+<section id="about"><div class="kicker reveal">About</div><h2 class="reveal">Games, levels<br>and a little magic.</h2>
+<div class="about">
+<div class="blob reveal"><div class="ico" style="background:var(--peach)">1</div><h3>Game design</h3><p>Since 2018: games and interactive experiences for museums, parks and castles, and now my own indie games.</p></div>
+<div class="blob reveal"><div class="ico" style="background:var(--mint)">2</div><h3>Level design</h3><p>Levels meant to be read at a glance, each with one strong idea.</p></div>
+<div class="blob reveal"><div class="ico" style="background:var(--lilac)">3</div><h3>AI-assisted development</h3><p>From idea to a playable prototype in days. The look is always chosen and directed by me: every screen has to tell its story.</p></div>
+<div class="blob reveal"><div class="ico" style="background:var(--sky)">4</div><h3>Digital Arts</h3><p>Bachelor's in Animation and Videogames, VHEI-IUDAV, Solofra (2016-2019).</p></div></div></section>
 
-      <article class="job">
-        <div class="jobhead">
-          <span class="jobrole">Game Designer</span>
-          <span class="jobdate">2022 — 2023</span>
-        </div>
-        <span class="jobplace">University project — IUDAV, Solofra</span>
-        <p class="jobdesc">Game concept, mechanics and dynamics, level design and
-        playtesting iterations for a university project.</p>
-      </article>
+<section id="play"><div class="games-head"><div><div class="kicker reveal">Playable here</div><h2 class="reveal" style="margin-bottom:0">Play in your browser.</h2></div>
+<div class="arrows reveal"><button id="prev" aria-label="Previous">&larr;</button><button id="next" aria-label="Next">&rarr;</button></div></div>
+<div class="track" id="track"></div>
+<p class="note">Sound is ON when a game starts (your browser unlocks it at your first click or key press). Use the SOUND button inside the game window to turn it off. Best on desktop with keyboard and mouse.</p></section>
 
-      <article class="job">
-        <div class="jobhead">
-          <span class="jobrole">Direction and editing</span>
-          <span class="jobdate">Nov 2020 — Jun 2021</span>
-        </div>
-        <span class="jobplace">Norman Castle — Montecalvo Irpino · A3media S.r.l.</span>
-        <p class="jobdesc">An animated short on the Normans in Campania, built in
-        Unity and projected inside the castle. Storyboard, scene composition,
-        direction and editing, video post-production adapted for projection.</p>
-      </article>
+<section id="stories"><div class="kicker reveal">Narrative</div><h2 class="reveal">Stories told<br>by how they look.</h2>
+<p class="lede reveal">Visual novels, horror and character experiments. Here the picture is the plot: grain, dithering and charcoal do the telling. Watch only - clips are silent.</p>
+<div class="grid"><article class="card vid reveal" data-type="vid" data-title="Slow Wave - talking portraits" data-src='"media/scp-portraits.mp4"' data-dl="">
+<div class="pic" style="background-image:url('media/scp-portraits.jpg')"></div><div class="body"><h3>Slow Wave - talking portraits</h3><p>Two characters have to speak in a horror game. The portraits are drawn in charcoal and breathe on screen: bubbling line, paper grain, stuttering mouth, blinking eyes.</p><div class="meta"><span class="pill" style="background:var(--peach)">Horror VN</span><span class="pill" style="background:var(--lilac)">Engine capture</span></div></div></article>
+<article class="card vid reveal" data-type="vid" data-title="Last Bell - engine scenes" data-src='"media/vn-panels.mp4"' data-dl="">
+<div class="pic" style="background-image:url('media/vn-panels.jpg')"></div><div class="body"><h3>Last Bell - engine scenes</h3><p>Visual novel panels built inside the engine: a tech panel on the side, a dialogue box, a character who looks at the camera.</p><div class="meta"><span class="pill" style="background:var(--lilac)">Visual novel</span><span class="pill" style="background:var(--sky)">Unity</span></div></div></article></div></section>
 
-      <article class="job">
-        <div class="jobhead">
-          <span class="jobrole">Game designer</span>
-          <span class="jobdate">Feb — Sep 2020</span>
-        </div>
-        <span class="jobplace">Porto Conte Regional Park — Alghero · A3media S.r.l.</span>
-        <p class="jobdesc">Technology upgrade and interactive games simulating natural
-        environments, made to raise environmental awareness. Mechanics and dynamics,
-        landscape composition, level design, direction and editing of interactive
-        scenes.</p>
-      </article>
+<section id="gallery"><div class="kicker reveal">Gallery</div><h2 class="reveal">Aesthetic tests.</h2>
+<p class="lede reveal">Scenes from the dithered horror look: two colours, a lot of dark, one figure waiting. Click a picture to see it large.</p>
+<div class="agrid reveal"><figure class="ac" data-i="0"><img loading="lazy" src="media/pick/fox/230.jpg" alt=""><figcaption>Scene 230 &ndash; Red idol</figcaption></figure><figure class="ac" data-i="1"><img loading="lazy" src="media/pick/fox/220.jpg" alt=""><figcaption>Scene 220 &ndash; Static road</figcaption></figure><figure class="ac" data-i="2"><img loading="lazy" src="media/pick/fox/221.jpg" alt=""><figcaption>Scene 221 &ndash; Glitch runner</figcaption></figure><figure class="ac" data-i="3"><img loading="lazy" src="media/pick/fox/222.jpg" alt=""><figcaption>Scene 222 &ndash; Glitch scanline</figcaption></figure><figure class="ac" data-i="4"><img loading="lazy" src="media/pick/fox/184.jpg" alt=""><figcaption>Scene 184 &ndash; Red corridor</figcaption></figure><figure class="ac" data-i="5"><img loading="lazy" src="media/pick/fox/185.jpg" alt=""><figcaption>Scene 185 &ndash; Red wall figure</figcaption></figure><figure class="ac" data-i="6"><img loading="lazy" src="media/pick/fox/180.jpg" alt=""><figcaption>Scene 180 &ndash; Wooden hall</figcaption></figure><figure class="ac" data-i="7"><img loading="lazy" src="media/pick/fox/179.jpg" alt=""><figcaption>Scene 179 &ndash; Wooden hall B</figcaption></figure><figure class="ac" data-i="8"><img loading="lazy" src="media/pick/fox/178.jpg" alt=""><figcaption>Scene 178 &ndash; Wooden hall C</figcaption></figure><figure class="ac" data-i="9"><img loading="lazy" src="media/pick/fox/172.jpg" alt=""><figcaption>Scene 172 &ndash; Noise dress</figcaption></figure><figure class="ac" data-i="10"><img loading="lazy" src="media/pick/fox/171.jpg" alt=""><figcaption>Scene 171 &ndash; Noise dress B</figcaption></figure><figure class="ac" data-i="11"><img loading="lazy" src="media/pick/fox/170.jpg" alt=""><figcaption>Scene 170 &ndash; Noise dress C</figcaption></figure><figure class="ac" data-i="12"><img loading="lazy" src="media/pick/fox/069.jpg" alt=""><figcaption>Scene 069 &ndash; Red shadow</figcaption></figure><figure class="ac" data-i="13"><img loading="lazy" src="media/pick/fox/068.jpg" alt=""><figcaption>Scene 068 &ndash; Red shadow B</figcaption></figure><figure class="ac" data-i="14"><img loading="lazy" src="media/pick/fox/067.jpg" alt=""><figcaption>Scene 067 &ndash; Red shadow C</figcaption></figure><figure class="ac" data-i="15"><img loading="lazy" src="media/pick/fox/066.jpg" alt=""><figcaption>Scene 066 &ndash; Red shadow D</figcaption></figure><figure class="ac" data-i="16"><img loading="lazy" src="media/pick/fox/065.jpg" alt=""><figcaption>Scene 065 &ndash; Sand table</figcaption></figure><figure class="ac" data-i="17"><img loading="lazy" src="media/pick/fox/005.jpg" alt=""><figcaption>Scene 005 &ndash; Talking mouth</figcaption></figure><figure class="ac" data-i="18"><img loading="lazy" src="media/pick/fox/014.jpg" alt=""><figcaption>Scene 014 &ndash; Sand pavilion</figcaption></figure></div></section>
 
-      <article class="job">
-        <div class="jobhead">
-          <span class="jobrole">Game designer</span>
-          <span class="jobdate">Sep — Nov 2019</span>
-        </div>
-        <span class="jobplace">11th Legambiente Congress, National Railway Museum — Pietrarsa · A3media S.r.l.</span>
-        <p class="jobdesc">Interactive games about air pollution and cutting CO₂
-        emissions. Mechanics and dynamics, level design, environment composition,
-        ambient sound design.</p>
-      </article>
+<section id="prototypes"><div class="kicker reveal">Prototypes and engine scenes</div><h2 class="reveal">Ideas, caught<br>while they move.</h2>
+<p class="lede reveal">Scenes captured directly from the engine while a game was still becoming a game. Some are playable above, some only exist as video.</p>
+<div class="grid"><article class="card vid reveal" data-type="vid" data-title="Expédissionne 34 - how it grew" data-src='"media/e34.mp4"' data-dl="">
+<div class="pic" style="background-image:url('media/e34.jpg')"></div><div class="body"><h3>Expédissionne 34 - how it grew</h3><p>The idle-combat game from its first test to the three-part ship, in 2 minutes of engine capture.</p><div class="meta"><span class="pill" style="background:var(--peach)">Idle RPG</span><span class="pill" style="background:var(--butter)">Video only</span></div></div></article>
+<article class="card vid reveal" data-type="vid" data-title="One More Window" data-src='"media/ow-core.mp4"' data-dl="downloads/OneMoreWindow-win64.zip">
+<div class="pic" style="background-image:url('media/ow-core.jpg')"></div><div class="body"><h3>One More Window</h3><p>The core idea in 50 seconds: a game that opens a real second window of itself - push the two together, door to door, and the character walks across. A toy version is playable above; the full game with memory between sessions is the Windows build (61 MB).</p><div class="meta"><span class="pill" style="background:var(--lilac)">Narrative</span><span class="pill" style="background:var(--butter)">Windows download</span><span class="pill" style="background:var(--mint)">Playable above</span></div></div></article>
+<article class="card vid reveal" data-type="vid" data-title="Slime desktop pet" data-src='"media/slime.mp4"' data-dl="downloads/BonbonBlob-win64.zip">
+<div class="pic" style="background-image:url('media/slime.jpg')"></div><div class="body"><h3>Slime desktop pet</h3><p>A jelly slime you poke, feed and dress, which can also leave the game window and wander over your desktop. The slime in the bottom corner of this page is the playable version: pick it up, throw it, poke it. The desktop mode needs real OS windows, so only the Windows build (36 MB) can leave the window; the clip shows it.</p><div class="meta"><span class="pill" style="background:var(--mint)">Cozy pet</span><span class="pill" style="background:var(--butter)">Windows download</span></div></div></article>
+<article class="card vid reveal" data-type="vid" data-title="Il Cane - siege night" data-src='"media/cane-assedio.mp4"' data-dl="">
+<div class="pic" style="background-image:url('media/cane-assedio.jpg')"></div><div class="body"><h3>Il Cane - siege night</h3><p>A sheepdog tower defence: the moon opens its eye, the raiders pour out of it, and the flock, the heroes and the dog fight to hold the wall. 34 seconds of engine capture.</p><div class="meta"><span class="pill" style="background:var(--peach)">Siege defence</span><span class="pill" style="background:var(--butter)">Video only</span></div></div></article>
+<article class="card vid reveal" data-type="vid" data-title="SCIA - teaser" data-src='"media/scia-teaser.mp4"' data-dl="">
+<div class="pic" style="background-image:url('media/scia-teaser.jpg')"></div><div class="body"><h3>SCIA - teaser</h3><p>A 2D puzzle-platformer where a trail of stick figures follows the protagonist.</p><div class="meta"><span class="pill" style="background:var(--peach)">Platformer</span><span class="pill" style="background:var(--butter)">Teaser</span></div></div></article></div></section>
 
-      <article class="job">
-        <div class="jobhead">
-          <span class="jobrole">Designer · Tester</span>
-          <span class="jobdate">Oct — Dec 2018</span>
-        </div>
-        <span class="jobplace">"Castelli d'Irpinia" — Avellino · A3media S.r.l.</span>
-        <p class="jobdesc">App features and user flows for an augmented-reality tour
-        of the Norman Castle of Casalbore, built in Unity.</p>
-      </article>
-    </div>
-  </section>
+<section id="tech"><div class="kicker reveal">Tech demos and tools</div><h2 class="reveal">The workshop.</h2>
+<p class="lede reveal">Small experiments with one question each: can the engine do this, and does it look good?</p>
+<div class="grid"><article class="card vid reveal" data-type="vid" data-title="Charcoal tear" data-src='"media/charcoal.mp4"' data-dl="">
+<div class="pic" style="background-image:url('media/charcoal.jpg')"></div><div class="body"><h3>Charcoal tear</h3><p>A shader and animation tech demo: a torn strip of paper peels away to reveal a charcoal landscape underneath.</p><div class="meta"><span class="pill" style="background:var(--mint)">Shader</span><span class="pill" style="background:var(--butter)">5 s loop</span></div></div></article></div></section>
 
-  <section>
-    <div class="head">
-      <h2>Where I come from</h2>
-      <span class="label">Background</span>
-    </div>
+<section id="other"><div class="otherband reveal"><div><div class="kicker" style="color:#2b2540">Beyond games</div><h2>Other work</h2>
+<p>A Shopify app, a WooCommerce plugin, a browser extension for Xero and two full-stack demo apps: the software side of the last months.</p></div>
+<a class="btn" href="other-work.html">See other work &rarr;</a></div></section>
 
-    <div class="prose">
-      <p><b>Bachelor's degree in Digital Arts — Animation and Video Games</b>,
-      VHEI-IUDAV, Solofra (2016–2019). Covered the full 2D/3D game development
-      pipeline: game design, programming fundamentals.</p>
+<section id="skills"><div class="kicker">What I work with</div><h2>The skills<br>scanner.</h2>
+<div class="scanner"><div class="beam" id="beam"></div><div class="chips" id="chips"></div></div>
+<div class="scan-legend"><span><i style="background:var(--peach)"></i>Languages</span><span><i style="background:var(--mint)"></i>Engines</span><span><i style="background:var(--lilac)"></i>Design</span><span><i style="background:var(--sky)"></i>Tools</span><span><i style="background:var(--butter)"></i>Learning</span></div></section>
 
-      <p><b>Where I am heading.</b> I am moving from designing interactive systems
-      to writing them. I am bringing AI into my game development workflow and
-      prototyping with these tools, while studying multiple programming languages
-      at the same time — the web, databases, and how the pieces of an application
-      fit together — one project at a time.</p>
+<section id="experience"><div class="kicker reveal">Experience</div><h2 class="reveal">Where I've worked.</h2><div class="tl">
+<div class="item reveal" style="--c:var(--butter)"><div class="when">NOW</div><h3>Independent game developer</h3><p>Personal projects in Unity and Ren'Py, not yet released.</p></div>
+<div class="item reveal" style="--c:var(--lilac)"><div class="when">2022 - 2023</div><h3>Game designer - IUDAV</h3><p>University project in Solofra.</p></div>
+<div class="item reveal" style="--c:var(--peach)"><div class="when">NOV 2020 - JUN 2021</div><h3>Direction and editing - A3media</h3><p>3D animated short about the Normans in Campania, projected inside the Norman castle of Montecalvo Irpino.</p></div>
+<div class="item reveal" style="--c:var(--mint)"><div class="when">FEB - SEP 2020</div><h3>Game designer - A3media</h3><p>Interactive environmental games for Porto Conte Regional Park, Alghero.</p></div>
+<div class="item reveal" style="--c:var(--sky)"><div class="when">SEP - NOV 2019</div><h3>Game and sound designer - A3media</h3><p>Interactive games on air pollution for the XI Legambiente Congress, Pietrarsa Railway Museum.</p></div>
+<div class="item reveal" style="--c:var(--peach)"><div class="when">OCT - DEC 2018</div><h3>Designer and tester - A3media</h3><p>Augmented-reality app for the Casalbore castle, Avellino.</p></div></div></section>
 
-      <p><b>How I communicate.</b> Italian is my first language. I understand
-      English well, both written and spoken, but I still have some trouble
-      speaking it fluently myself.</p>
+<section id="contact"><div class="kicker reveal" style="justify-content:center">Contact</div><h2 class="reveal">Shall we make<br>something together?</h2>
+<a class="big-mail reveal" href="mailto:fabwork987@gmail.com">Write to me</a>
+<div class="facts reveal"><span>Italian - native</span><span>English - B2</span><span>Remote - EU</span><span>Available now</span></div></section>
+<footer>&copy; 2026 Fabrizio Amenta - handmade, with a little AI help</footer>
 
-      <p><b>How I can be hired.</b> I am based in Italy, and I am available to
-      work for companies abroad as well.</p>
-    </div>
-  </section>
+<div id="player" role="dialog" aria-modal="true"><div class="frame"><div class="frame-top"><div><h3 id="ptitle"></h3><small id="pctrl"></small><div id="phow"></div></div><button id="pclose" aria-label="Close">&#10005;</button></div>
+<div id="lbbody"></div></div></div>
 
-  <footer>
-    <span class="label">Fabrizio Amenta — Naples, Italy</span>
-    <span class="label">Programmer</span>
-  </footer>
+<script>
+const GAMES=[
+ {t:"Stick Rush",d:"A freefall down a shaft, one stickman, walls full of enemies. Left click and right click are your only buttons: strike left, strike right, keep the rhythm.",c:"Left click = hit left, right click = hit right (or A / D, arrows).",how:"<b>How to beat each enemy.</b> Grey grunt: press its side when it flashes - one hit. Red brute (big, cracked white lines after the first hit): hit it TWICE on the same side within 2.5 s: it flashes white and rebounds with you ('CRACK - HIT AGAIN!'). Purple bomber (red 'no' sign over its head, lit fuse): NEVER hit it - let it fall past you (DODGE), hitting it hurts. Yellow climber (arrow over its head): it climbs up to meet you, strike it as it arrives. You can press early: the strike reaches 2.6 m ahead.",src:"play/stick-rush/index.html",img:"media/play/stick-rush.jpg",col:"var(--peach)",tag:"Action"},
+ {t:"Banana Parry",d:"A banana, a fork and a kitchen full of angry fruit. Aim with the mouse, click to parry, build the combo.",c:"Mouse: aim and click to parry - 1 / 2 / 3 difficulty - R restart.",src:"play/banana-parry/index.html",img:"media/play/banana-parry.jpg",col:"var(--butter)",tag:"Arcade"},
+ {t:"One More Window",d:"The game that opens a second window of itself. Here in the page: drag two windows together, door to door, and walk the girl across. You can even open a real second browser window.",c:"A / D or arrows walk - or CLICK in her room to walk there - drag the title bars - OPEN A REAL 2ND BROWSER WINDOW for the real trick.",src:"play/other-window/index.html",img:"media/ow-core.jpg",col:"var(--lilac)",tag:"Narrative toy"},
+ {t:"Rivela",d:"A photograph is cut into pieces and scattered. Drag them back into place and watch the picture appear.",c:"Mouse: click a piece to pick it up, move, click again to drop it (right place = it snaps in, wrong = it goes back).",src:"play/rivela/index.html",img:"media/play/rivela.jpg",col:"var(--sky)",tag:"Puzzle"},
+ {t:"Rivela 3D",d:"A low-poly sculpture falls apart; click the pieces to put it back together while the camera turns.",c:"Click pieces - drag to turn the sculpture.",src:"play/rivela-3d/index.html",img:"media/play/rivela-3d.jpg",col:"var(--mint)",tag:"Puzzle"},
+ {t:"Pebble and the Bell",d:"A tech demo: a penguin chick has until sunset to ring the bell on the mountain. Slide on your belly, take your time.",c:"WASD walk - Shift run - hold Space to belly-slide - E / click talk - walk away to close the talk. Hover the right edge for the full key list.",src:"play/pebble-bell/index.html",img:"media/play/pebble-bell.jpg",col:"var(--sky)",tag:"Adventure"},
+ {t:"Sundown Duel",d:"A western quick-draw: keep the mouse on the holster, wait for the 3-2-1, shoot - or parry the other bullet. This is the offline duel against the bot; the online match runs in the <a href='downloads/SundownDuel-win64.zip' download>desktop build</a>.",c:"Mouse: aim and click to shoot, click on the incoming bullet to parry. R reload. Menu: DUEL THE BOT.",src:"play/sundown-duel/index.html",img:"media/play/sundown-duel.jpg",col:"var(--butter)",tag:"Duel"},
+ {t:"Ser Knight",d:"Help Ser Knight beat a Formula 1 car on a bicycle, in full plate armour. The track is a long green run of absurd stunts - leave it and you start again.",c:"Left / Right steer (tilt in the air) - Down brake - Space jump / nose down.",src:"play/gran-prix/index.html",img:"media/play/gran-prix.jpg",col:"var(--mint)",tag:"Stunt racer"},
+ {t:"SCIA",d:"A 2D puzzle-platformer where the trail of copies behind you is also your tool: freeze it into a sculpture and walk on it.",c:"Arrows / A D move - W jump - Space freeze the trail - R rotate the case. Legend on screen.",src:"play/scia/index.html",img:"media/play/scia.jpg",col:"var(--peach)",tag:"Puzzle platformer"},
+ {t:"Expédissionne 34 - the ship",d:"The expedition lander holds a street against waves of dead expeditions. Three parts at once: the fight on top, the bunker below that pays for upgrades, and the delivery of each new part to the ship. Speed goes up to x24.",c:"Click enemies for double damage - SEND NEXT PART in the bunker - speed buttons x1 to x24.",src:"play/expedition-ship/index.html?v=26b",img:"media/e34.jpg",col:"var(--lilac)",tag:"Idle shooter"},
+];
+const track=document.getElementById('track');
+GAMES.forEach(g=>{const el=document.createElement('article');el.className='game';
+ el.innerHTML=`<div class="pic" style="background-image:url('${g.img}')"></div><div class="body"><h3>${g.t}</h3><p>${g.d}</p><div class="row"><span class="pill" style="background:${g.col}">${g.tag}</span><button class="play" style="background:${g.col}">Play</button></div></div>`;
+ el.querySelector('.play').onclick=()=>openGame(g);el.querySelector('.pic').style.cursor='pointer';el.querySelector('.pic').onclick=()=>openGame(g);
+ el.addEventListener('mousemove',e=>{const r=el.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;el.style.transform=`rotateY(${x*12}deg) rotateX(${-y*12}deg) translateZ(10px)`;});
+ el.addEventListener('mouseleave',()=>el.style.transform='');track.appendChild(el);});
+document.getElementById('next').onclick=()=>track.scrollBy({left:390,behavior:'smooth'});
+document.getElementById('prev').onclick=()=>track.scrollBy({left:-390,behavior:'smooth'});
+let drag=null;
+track.addEventListener('pointerdown',e=>{if(e.pointerType!=='mouse'||e.target.closest('button'))return;drag={x:e.clientX,s:track.scrollLeft};track.style.scrollSnapType='none';track.style.cursor='grabbing';});
+addEventListener('pointermove',e=>{if(drag)track.scrollLeft=drag.s-(e.clientX-drag.x);});
+addEventListener('pointerup',()=>{if(!drag)return;drag=null;track.style.scrollSnapType='';track.style.cursor='';});
 
-</div>
-</body>
-</html>
+
+/* hero pictures open their game */
+document.querySelectorAll('[data-open]').forEach(v=>v.addEventListener('click',()=>{const o=v.dataset.open;if(o.startsWith('g:')){const g=GAMES.find(x=>x.t===o.slice(2));if(g)openGame(g);}else{const c=[...document.querySelectorAll('.card')].find(x=>(x.dataset.src||'').indexOf(o.slice(2)+'.mp4')>=0);if(c)openMedia(c);}}));
+/* edge scroll of the Play strip: mouse near left edge -> scrolls left, near right edge -> right, centre = rest */
+(function(){let vel=0,raf=0;const Z=.16;
+ function step(){if(vel){track.style.scrollSnapType='none';track.scrollLeft+=vel;raf=requestAnimationFrame(step);}else{raf=0;track.style.scrollSnapType='';}}
+ track.addEventListener('mousemove',e=>{if(drag)return;const r=track.getBoundingClientRect(),f=(e.clientX-r.left)/r.width;
+  vel=f<Z?-(Z-f)/Z*18:f>1-Z?(f-(1-Z))/Z*18:0;if(vel&&!raf)raf=requestAnimationFrame(step);});
+ track.addEventListener('mouseleave',()=>{vel=0;});
+})();
+
+let paused=false;
+const player=document.getElementById('player'),body=document.getElementById('lbbody');
+function openGame(g){if(document.activeElement)document.activeElement.blur();document.getElementById('ptitle').textContent=g.t;document.getElementById('pctrl').textContent=g.c;
+ body.innerHTML='<iframe id="gameframe" allow="autoplay; fullscreen; gamepad" allowfullscreen></iframe>';const gf=document.getElementById('gameframe');gf.onload=()=>{try{gf.focus();gf.contentWindow.focus()}catch(e){}};gf.src=g.src;document.getElementById('phow').innerHTML=g.how||'';player.classList.add('open');paused=true;}
+function openMedia(c){document.getElementById('ptitle').textContent=c.dataset.title;const pc=document.getElementById('pctrl');pc.textContent=c.dataset.type==='vid'?'Silent clip recorded from the engine':'Click the image for the next one';if(c.dataset.dl){pc.innerHTML+=' - <a href="'+c.dataset.dl+'" download>Download the Windows build</a>';}
+ const s=JSON.parse(c.dataset.src);
+ if(c.dataset.type==='vid'){body.innerHTML='<video controls autoplay loop muted playsinline></video>';const v=body.firstChild;fetch(s).then(r=>r.blob()).then(bl=>{if(player.classList.contains('open'))v.src=URL.createObjectURL(bl)}).catch(()=>{v.src=s});}
+ else{let i=0;body.innerHTML='<img src="'+s[0]+'" alt="">';body.firstChild.onclick=e=>{i=(i+1)%s.length;e.target.src=s[i];};}
+ player.classList.add('open');paused=true;}
+document.querySelectorAll('.card').forEach(c=>c.onclick=()=>openMedia(c));
+addEventListener('keydown',e=>{if(player.classList.contains('open')&&(e.key===' '||e.key==='Enter'||e.key.indexOf('Arrow')===0))e.preventDefault();},true);
+function closeGame(){player.classList.remove('open');body.innerHTML='';paused=false;}
+document.getElementById('pclose').onclick=closeGame;
+player.addEventListener('click',e=>{if(e.target===player)closeGame();});
+addEventListener('keydown',e=>{if(e.key==='Escape')closeGame();});
+
+/* ---------- scanner competenze ---------- */
+const SK=[["Python","peach","language"],["Ren'Py","mint","engine"],["Unity","mint","engine"],
+  ["Game design","lilac",""],["Level design","lilac",""],["Git / GitHub","sky",""],["AI-assisted dev","sky",""],
+  ["Web","butter","learning"],["Databases","butter","learning"],["Shopify / WooCommerce","sky",""],["React / FastAPI","peach",""]];
+const chips=document.getElementById('chips');
+SK.forEach(s=>{const c=document.createElement('span');c.className='chip';c.dataset.c=s[1];
+  c.innerHTML=s[0]+(s[2]?`<small>${s[2]}</small>`:'');chips.appendChild(c);});
+const beam=document.getElementById('beam'), scanner=beam.parentElement;
+let bx=-140;
+function scan(){
+  const W=scanner.clientWidth; bx+=4; if(bx>W+200) bx=-140;
+  beam.style.left=bx+'px';
+  const sr=scanner.getBoundingClientRect();
+  chips.querySelectorAll('.chip').forEach(c=>{
+    const r=c.getBoundingClientRect(), cx=r.left-sr.left+r.width/2;
+    if(cx<bx+110){ c.classList.add('on'); c.style.background=`var(--${c.dataset.c})`; }
+    if(bx<0){ c.classList.remove('on'); c.style.background=''; }
+  });
+  requestAnimationFrame(scan);
+}
+scan();
+
+
+
+document.querySelectorAll('.ac').forEach(f=>f.onclick=()=>{document.getElementById('ptitle').textContent=f.querySelector('figcaption').textContent;document.getElementById('pctrl').textContent='Click to close';document.getElementById('phow').innerHTML='';body.innerHTML='<img src="'+f.querySelector('img').src+'" alt="">';body.firstChild.onclick=closeGame;player.classList.add('open');paused=true;});
+
+(function(){
+// Bonbon Blob pet: a 2D port of the game's JellySim (per-vertex springs + neighbour coupling,
+// inertial lag, squash/stretch scalar, Gaussian grab patch, press dimple + rebound).
+const U=52,H=1/240,img=new Image();img.src='media/slime-pet.png';
+const CW=340,CH=360,cv=document.createElement('canvas');cv.width=CW;cv.height=CH;
+cv.setAttribute('role','img');cv.setAttribute('aria-label','Bonbon Blob, a jelly slime pet. Grab it, stretch it and throw it.');
+cv.style.cssText='position:fixed;left:0;top:0;width:'+CW+'px;height:'+CH+'px;z-index:30;pointer-events:none;will-change:transform;filter:drop-shadow(0 8px 6px rgba(43,37,64,.18))';
+document.body.appendChild(cv);const gl=cv.getContext('webgl',{premultipliedAlpha:true,alpha:true});
+function sh(t,src){const o=gl.createShader(t);gl.shaderSource(o,src);gl.compileShader(o);return o;}
+const pr=gl.createProgram();gl.attachShader(pr,sh(gl.VERTEX_SHADER,'attribute vec2 p;attribute vec2 u;varying vec2 v;uniform vec2 r;void main(){v=u;gl_Position=vec4(p.x/r.x*2.-1.,1.-p.y/r.y*2.,0.,1.);}'));
+gl.attachShader(pr,sh(gl.FRAGMENT_SHADER,'precision mediump float;varying vec2 v;uniform sampler2D t;void main(){gl_FragColor=texture2D(t,v);}'));gl.linkProgram(pr);gl.useProgram(pr);
+const vb=gl.createBuffer(),ib=gl.createBuffer(),tex=gl.createTexture();let texOK=false;
+
+const tip=document.createElement('div');tip.textContent='';tip.style.cssText='position:fixed;z-index:31;font:600 14px Fredoka,sans-serif;color:#2b2540;background:#fff;border:2px solid #2b2540;border-radius:16px;padding:7px 14px;box-shadow:3px 3px 0 #2b2540;pointer-events:none;transition:opacity .3s;opacity:0;max-width:210px;min-width:60px;line-height:1.25';document.body.appendChild(tip);
+const K=300,C=4,KN=1300,CN=8,SqK=230,SqC=4.2,PatchK=1700,PatchC=16,PullLimit=0.85,PressDepth=0.46,PressSigma=0.33,PressK=1400,PressC=22,MaxD=0.8;
+const NX=10,NY=10,N=NX*NY,rx=new Float32Array(N),ry=new Float32Array(N),dx=new Float32Array(N),dy=new Float32Array(N),vx=new Float32Array(N),vy=new Float32Array(N),hf=new Float32Array(N);
+const W=2,HH=1.96;
+for(let j=0;j<NY;j++)for(let i=0;i<NX;i++){const k=j*NX+i;rx[k]=-1+W*i/(NX-1);ry[k]=HH*j/(NY-1);hf[k]=ry[k]/HH;}
+const nb=[];for(let j=0;j<NY;j++)for(let i=0;i<NX;i++){const a=[];if(i>0)a.push(j*NX+i-1);if(i<NX-1)a.push(j*NX+i+1);if(j>0)a.push((j-1)*NX+i);if(j<NY-1)a.push((j+1)*NX+i);nb.push(a);}
+let X=innerWidth-90,Y=-200,BVX=0,BVY=0,sq=0,sqv=0,held=false,gk=-1,cx=0,cy=0,hist=[],press=false,t=0,last=performance.now(),said=false,acc=0,lean=0,leanv=0,hop=2+Math.random()*3,pressT=0;
+const patch=[];
+const local=(px,py)=>[(px-X)/U,(Y-py)/U];
+const hit=(px,py)=>{const[lx,ly]=local(px,py);return (lx/1.05)**2+((ly-0.95)/1.0)**2<1;};
+function nearest(lx,ly){let b=0,bd=1e9;for(let k=0;k<N;k++){const ax=rx[k]+dx[k]-lx,ay=ry[k]+dy[k]-ly,d=ax*ax+ay*ay;if(d<bd){bd=d;b=k}}return b;}
+function setPatch(k){patch.length=0;for(let m=0;m<N;m++){const ax=rx[m]-rx[k],ay=ry[m]-ry[k],d2=ax*ax+ay*ay;const w=Math.exp(-d2/(2*.25))*.75+Math.exp(-d2/(2*.81))*.25;if(w>.02)patch.push([m,w]);}}
+const gauss=(k,m)=>{const ax=rx[m]-rx[k],ay=ry[m]-ry[k];return Math.exp(-(ax*ax+ay*ay)/(2*PressSigma*PressSigma));};
+addEventListener('pointerdown',e=>{if(e.button||!hit(e.clientX,e.clientY))return;held=true;cx=e.clientX;cy=e.clientY;const[lx,ly]=local(cx,cy);gk=nearest(lx,ly);setPatch(gk);hist=[[performance.now(),cx,cy]];BVX=BVY=0;press=true;pressT=0;document.body.style.cursor='grabbing';said=true;SFX.squish(0);say(pick(TOUCH));e.preventDefault();},{passive:false});
+addEventListener('pointermove',e=>{if(held){cx=e.clientX;cy=e.clientY;hist.push([performance.now(),cx,cy]);if(hist.length>8)hist.shift();if(Math.hypot(cx-hist[0][1],cy-hist[0][2])>6)press=false;}else{document.body.style.cursor=hit(e.clientX,e.clientY)?'grab':'';}});
+function rel(){if(!held)return;held=false;document.body.style.cursor='';let pvx=0,pvy=0;const n=hist.length;
+ if(n>1){const a=hist[0],b=hist[n-1],dt=Math.max(.016,(b[0]-a[0])/1000);if(performance.now()-b[0]<120){pvx=(b[1]-a[1])/dt;pvy=(b[2]-a[2])/dt;}}
+ BVX=Math.max(-1500,Math.min(1500,pvx*.6));BVY=Math.max(-1500,Math.min(1500,pvy*.6));
+ if(press&&gk>=0){for(let m=0;m<N;m++){const w=gauss(gk,m);if(w>.03){const nx=rx[m],ny=ry[m]-.9,l=Math.hypot(nx,ny)||1;vx[m]+=nx/l*5.5*w;vy[m]+=ny/l*5.5*w;}}sqv+=2.2;}
+ press=false;gk=-1;patch.length=0;SFX.plop();}
+addEventListener('pointerup',rel);addEventListener('pointercancel',rel);
+function sub(exX,exY){
+ for(let k=0;k<N;k++){const Ki=K*(1.25-.45*hf[k]);let ax=-Ki*dx[k]-C*vx[k],ay=-Ki*dy[k]-C*vy[k];
+  const n=nb[k];let mdx=0,mdy=0,mvx=0,mvy=0;for(let q=0;q<n.length;q++){const o=n[q];mdx+=dx[o];mdy+=dy[o];mvx+=vx[o];mvy+=vy[o];}
+  mdx/=n.length;mdy/=n.length;mvx/=n.length;mvy/=n.length;
+  ax+=KN*(mdx-dx[k])+CN*(mvx-vx[k]);ay+=KN*(mdy-dy[k])+CN*(mvy-vy[k]);
+  if(held)ay-=14*Math.pow(1-hf[k],1.5);
+  vx[k]+=ax*H-exX*hf[k]*.85;vy[k]+=ay*H-exY*hf[k]*.85;}
+ if(held&&gk>=0){const[lx,ly]=local(cx,cy);let px=lx-rx[gk],py=ly-ry[gk];const l=Math.hypot(px,py);if(l>PullLimit){px*=PullLimit/l;py*=PullLimit/l}
+  for(let q=0;q<patch.length;q++){const m=patch[q][0],w=patch[q][1];vx[m]+=(PatchK*w*(px-dx[m])-PatchC*w*vx[m])*H;vy[m]+=(PatchK*w*(py-dy[m])-PatchC*w*vy[m])*H;}
+  if(press){const depth=PressDepth*Math.min(1,.35+pressT/.35);for(let m=0;m<N;m++){const w=gauss(gk,m);if(w>.03){const nx=rx[m],ny=ry[m]-.9,l2=Math.hypot(nx,ny)||1;
+   vx[m]+=(PressK*(-nx/l2*depth*w-dx[m])-PressC*vx[m])*H*w;vy[m]+=(PressK*(-ny/l2*depth*w-dy[m])-PressC*vy[m])*H*w;}}}}
+ for(let k=0;k<N;k++){dx[k]+=vx[k]*H;dy[k]+=vy[k]*H;const l=Math.hypot(dx[k],dy[k]);if(l>MaxD){dx[k]*=MaxD/l;dy[k]*=MaxD/l}
+  if(ry[k]+dy[k]<0){dy[k]=-ry[k];if(vy[k]<0)vy[k]=0;}}
+ const sT=held?.06:(Math.abs(BVY)>260?Math.max(-.12,Math.min(.28,-BVY/U*.02)):0);
+ sqv+=(-SqK*(sq-sT)-SqC*sqv)*H;sq+=sqv*H;if(sq<-.55)sq=-.55;if(sq>.7)sq=.7;}
+// ---- speech bubble + synthesized sounds (WebAudio, no files) ----
+const IDLE=["Touch me!","Try to poke me!","Drag me around!","Throw me, I bounce!","Scroll down for playable games","Every game here runs in your browser","Click a card to play right here","Sound is on: turn it up a bit!","I'm Bonbon Blob. Nice to meet you!","Squish me gently, please","The big pictures are all playable","Boing!"];
+const TOUCH=["Hehe, that tickles!","Wheee!","Squish!","Put me down... or don't!","Boop!","Ooh, you caught me!","Careful, I'm jelly!","Again, again!"];
+const pick=a=>a[Math.floor(Math.random()*a.length)];
+let AX=null,mst=null,gap=2.5,showT=0,typed='',full='',ti=0,tt=0,idleI=Math.floor(Math.random()*IDLE.length),vis=false,shown=0;
+function actx(){if(AX)return AX;const A=window.AudioContext||window.webkitAudioContext;if(!A)return null;try{AX=new A();}catch(e){}return AX;}
+function ok(){if(window.__siteSound===false||window.__snd===false)return null;const c=AX;if(!c)return null;if(c.state==='suspended')c.resume();return c.state==='running'?c:null;}
+['pointerdown','keydown','touchend'].forEach(ev=>addEventListener(ev,()=>{actx();if(AX&&AX.state==='suspended')AX.resume();},{capture:true,passive:true}));
+function env(c,g,t0,a,d,pk){g.gain.setValueAtTime(0.0001,t0);g.gain.exponentialRampToValueAtTime(pk,t0+a);g.gain.exponentialRampToValueAtTime(0.0001,t0+a+d);}
+const SFX={
+ blip(f,len){const c=ok();if(!c)return;const t0=c.currentTime,o=c.createOscillator(),o2=c.createOscillator(),g=c.createGain(),lp=c.createBiquadFilter();
+  o.type='triangle';o2.type='sine';lp.type='lowpass';lp.frequency.value=1500;lp.Q.value=3;
+  o.frequency.setValueAtTime(f*.86,t0);o.frequency.exponentialRampToValueAtTime(f*1.18,t0+len*.55);o.frequency.exponentialRampToValueAtTime(f*.98,t0+len);
+  o2.frequency.setValueAtTime(f*.5,t0);o2.frequency.exponentialRampToValueAtTime(f*.6,t0+len);
+  env(c,g,t0,.012,len,.07);o.connect(lp);o2.connect(lp);lp.connect(g);g.connect(c.destination);o.start(t0);o2.start(t0);o.stop(t0+len+.05);o2.stop(t0+len+.05);},
+ squish(k){const c=ok();if(!c)return;const t0=c.currentTime,o=c.createOscillator(),g=c.createGain(),lp=c.createBiquadFilter(),lf=c.createOscillator(),lg=c.createGain();
+  o.type='sine';lp.type='lowpass';lp.frequency.setValueAtTime(900,t0);lp.frequency.exponentialRampToValueAtTime(260,t0+.22);lp.Q.value=6;
+  o.frequency.setValueAtTime(240+k*40,t0);o.frequency.exponentialRampToValueAtTime(95,t0+.2);
+  lf.frequency.value=31;lg.gain.value=26;lf.connect(lg);lg.connect(o.frequency);
+  env(c,g,t0,.01,.24,.22);o.connect(lp);lp.connect(g);g.connect(c.destination);o.start(t0);lf.start(t0);o.stop(t0+.3);lf.stop(t0+.3);},
+ plop(){const c=ok();if(!c)return;const t0=c.currentTime,o=c.createOscillator(),g=c.createGain();
+  o.type='sine';o.frequency.setValueAtTime(130,t0);o.frequency.exponentialRampToValueAtTime(420,t0+.09);o.frequency.exponentialRampToValueAtTime(260,t0+.18);
+  env(c,g,t0,.01,.2,.2);o.connect(g);g.connect(c.destination);o.start(t0);o.stop(t0+.25);}
+};
+function say(txt){full=txt;typed='';ti=0;tt=0;showT=0;vis=true;tip.style.opacity=1;tip.textContent='';mst=1;}
+function bubbleTick(dt,onGround){
+ if(mst){ tt+=dt; const per=.036; while(ti<full.length&&tt>=per){tt-=per;const ch=full[ti++];tip.textContent=typed+=ch;
+   if(/[a-z]/i.test(ch)&&ti%2===1){const v=/[aeiou]/i.test(ch)?1:0;SFX.blip(250+Math.random()*90+v*60+(ch.charCodeAt(0)%7)*14,.085);} }
+  if(ti>=full.length){mst=null;showT=0;} return; }
+ if(vis){showT+=dt;if(showT>2.6+full.length*.03){vis=false;tip.style.opacity=0;gap=3.5+Math.random()*3;}return;}
+ if(held)return; gap-=dt; if(gap<=0&&onGround){say(IDLE[idleI++%IDLE.length]);}
+}
+const IDX=[];for(let j=0;j<NY-1;j++)for(let i=0;i<NX-1;i++){const k=j*NX+i;IDX.push(k,k+1,k+NX,k+1,k+NX+1,k+NX);}
+gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER,ib);gl.bufferData(gl.ELEMENT_ARRAY_BUFFER,new Uint16Array(IDX),gl.STATIC_DRAW);
+const uvb=gl.createBuffer(),UVA=new Float32Array(N*2);for(let k=0;k<N;k++){UVA[k*2]=(rx[k]+1)/2;UVA[k*2+1]=1-ry[k]/HH;}
+gl.bindBuffer(gl.ARRAY_BUFFER,uvb);gl.bufferData(gl.ARRAY_BUFFER,UVA,gl.STATIC_DRAW);
+gl.enable(gl.BLEND);gl.blendFunc(gl.ONE,gl.ONE_MINUS_SRC_ALPHA);gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL,true);
+const PA=new Float32Array(N*2);
+function draw(){if(!img.complete||!img.naturalWidth)return;
+ if(!texOK){gl.bindTexture(gl.TEXTURE_2D,tex);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,img);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);texOK=true;}
+ const sy=1+sq,sx=1/Math.sqrt(Math.max(.3,sy)),ox=CW/2,oy=CH-30;
+ for(let k=0;k<N;k++){const x=(rx[k]+dx[k])*sx,y=(ry[k]+dy[k])*sy;PA[k*2]=ox+(x+lean*hf[k]*hf[k])*U;PA[k*2+1]=oy-y*U;}
+ gl.viewport(0,0,CW,CH);gl.clearColor(0,0,0,0);gl.clear(gl.COLOR_BUFFER_BIT);
+ const pl=gl.getAttribLocation(pr,'p'),ul=gl.getAttribLocation(pr,'u');
+ gl.bindBuffer(gl.ARRAY_BUFFER,vb);gl.bufferData(gl.ARRAY_BUFFER,PA,gl.DYNAMIC_DRAW);gl.enableVertexAttribArray(pl);gl.vertexAttribPointer(pl,2,gl.FLOAT,false,0,0);
+ gl.bindBuffer(gl.ARRAY_BUFFER,uvb);gl.enableVertexAttribArray(ul);gl.vertexAttribPointer(ul,2,gl.FLOAT,false,0,0);
+ gl.uniform2f(gl.getUniformLocation(pr,'r'),CW,CH);gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER,ib);gl.drawElements(gl.TRIANGLES,IDX.length,gl.UNSIGNED_SHORT,0);
+ cv.style.transform='translate('+(X-CW/2)+'px,'+(Y-(CH-30))+'px)';}
+(function tick(now){const dt=Math.min(.05,(now-last)/1000);last=now;t+=dt;const fl=innerHeight-4;const pvx=BVX,pvy=BVY;
+ if(held){pressT+=dt;const gx=gk>=0?rx[gk]:0,gy=gk>=0?ry[gk]:.9,tx=cx-gx*U,ty=cy+gy*U,k=90,c=11;
+  BVX+=((tx-X)*k-BVX*c)*dt;BVY+=((ty-Y)*k-BVY*c)*dt;X+=BVX*dt;Y+=BVY*dt;}
+ else{BVY+=1350*dt;X+=BVX*dt;Y+=BVY*dt;
+  if(X<44){X=44;if(Math.abs(BVX)>60){sqv-=1.2;for(let k=0;k<N;k++)vx[k]+=3*hf[k]}BVX=Math.abs(BVX)*.42;}
+  if(X>innerWidth-44){X=innerWidth-44;if(Math.abs(BVX)>60){sqv-=1.2;for(let k=0;k<N;k++)vx[k]-=3*hf[k]}BVX=-Math.abs(BVX)*.42;}
+  if(Y<110){Y=110;BVY=Math.abs(BVY)*.5}
+  if(Y>=fl){Y=fl;if(BVY>230){const imp=BVY/U;sqv-=.42*imp;const s=.35*imp;for(let k=0;k<N;k++){const sg=rx[k]<0?-1:1;vx[k]+=sg*s*(1-hf[k]);vy[k]+=imp*.25*hf[k]}BVY=-BVY*.3;if(BVY>-120)BVY=0;}else BVY=0;
+   BVX*=Math.pow(.02,dt);
+   if(Math.abs(BVY)<1&&Math.abs(BVX)<30){hop-=dt;if(hop<=0){sqv-=2.4;BVY=-560;BVX=(Math.random()<.5?-1:1)*150;hop=2.5+Math.random()*4}}}}
+ // body velocity change from anything except gravity -> the skin lags behind (units/s, y up)
+ const exs=(BVX-pvx)/U,eys=-(BVY-pvy-(held?0:1350*dt))/U;
+ acc+=dt;const steps=Math.max(1,Math.min(12,Math.round(acc/H)));acc=Math.max(0,acc-steps*H);
+ for(let s=0;s<steps;s++)sub(exs/steps,eys/steps);
+ leanv+=(-220*lean-4.6*leanv)*dt-exs*.35;lean+=leanv*dt;lean=Math.max(-.5,Math.min(.5,lean));
+ draw();
+ tip.style.left=Math.max(6,Math.min(innerWidth-tip.offsetWidth-6,X-tip.offsetWidth/2))+'px';tip.style.top=(Y-165-tip.offsetHeight+30)+'px';
+ bubbleTick(dt,Y>=fl-1);
+ requestAnimationFrame(tick)})(last);
+addEventListener('resize',()=>{if(X>innerWidth-44)X=innerWidth-44});
+
+})();
+
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script></body></html>

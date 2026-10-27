@@ -1,0 +1,8 @@
+{
+  "ondate": [
+    { "nome": "FIRST BLOOD", "D": 1, "durata": 30, "respiroDopo": 2, "pesi": [ {"tipo":"grunt","peso":1} ] },
+    { "nome": "SPEED UP",    "D": 2, "durata": 40, "respiroDopo": 6, "pesi": [ {"tipo":"grunt","peso":3}, {"tipo":"dasher","peso":2} ] },
+    { "nome": "HEAVY HANDS", "D": 3, "durata": 45, "respiroDopo": 2, "pesi": [ {"tipo":"grunt","peso":3}, {"tipo":"dasher","peso":2}, {"tipo":"brute","peso":2} ] },
+    { "nome": "SHIELD WALL", "D": 4, "durata": 50, "respiroDopo": 0, "pesi": [ {"tipo":"grunt","peso":3}, {"tipo":"dasher","peso":2}, {"tipo":"brute","peso":2}, {"tipo":"aegis","peso":3} ] }
+  ]
+}

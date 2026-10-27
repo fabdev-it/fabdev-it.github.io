@@ -1,0 +1,11 @@
+{
+  "spawnX": 9.5, "contatto": 1.0, "zona": 2.4, "perfetta": 1.5, "tolleranza": 2.8,
+  "cooldown": 0.110, "buffer": 0.120, "stunWhiff": 0.30, "attaccoDelay": 0.05, "telegrafo": 0.5, "recupero": 0.7,
+  "vite": 5, "invul": 1.2, "respinta": 2.0, "respintaRaggio": 3.0, "bruteRespinta": 1.5, "aegisRespinta": 2.0,
+  "ecoVel": 40.0, "ecoDelay": 0.09, "ecoRaggio": 6.0, "ecoMax": 8,
+  "v0Base": 2.0, "v0PerD": 0.22, "spawnBase": 1.60, "spawnPerD": 0.10,
+  "shakeMax": 0.15, "shakeOn": true,
+  "suoloY": -1.9, "scalaEroe": 0.66, "koDurata": 0.7, "koVelocita": 7.0,
+  "puntiKill": 100, "puntiPerfect": 25, "puntiChain": 50, "comboPerLivello": 10, "skinIniziale": 0,
+  "slowCooldown": 8.0, "respiroBreve": 2.0, "respiroLungo": 6.0, "introDurata": 2.0, "retryRespiro": 3.0, "curaOgniKill": 25
+}

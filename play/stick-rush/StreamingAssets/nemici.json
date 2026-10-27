@@ -1,0 +1,8 @@
+{
+  "tipi": [
+    { "id": "grunt",  "hp": 1, "velocita": 1.0, "scala": 1.0,  "colore": 1, "bloccaLama": false },
+    { "id": "dasher", "hp": 1, "velocita": 1.8, "scala": 0.95, "colore": 3, "bloccaLama": false },
+    { "id": "brute",  "hp": 2, "velocita": 1.0, "scala": 1.35, "colore": 5, "bloccaLama": false },
+    { "id": "aegis",  "hp": 1, "velocita": 1.0, "scala": 1.05, "colore": 4, "bloccaLama": true }
+  ]
+}
